@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Debasish Barman | Kolkata</title>
+    <link rel="shortcut icon" href="./assets/Squarelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="scroll.css">
+    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/Debasish Barman.png" alt="logo">
+        <ul id="sideMenu">
+            <li> <a href="#header">Home</a> </li>
+            <li> <a href="#about">About</a> </li>
+            <li> <a href="#services">Services</a> </li>
+            <li> <a href="#portfolio">Portfolio</a> </li>
+            <li> <a href="#contact">Contact</a> </li>
+            <li> <a href="underProcess.html" target="_blank">Events</a> </li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div id="scrollIndicator"></div>
+
+
+    <div id="header">
+        <div class="container">
+
+            <div class="headerText">
+                <p>BCA Student|Web Developer</p>
+                <h1>Hi, I'm <span>Debasish</span><br> From INDIA</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A passionate Full Stack Developer & BCA student at BRAINWARE UNIVERSITY. Interested on databases, cloud platforms and Backend Development. Speaking of academics, I've always been a quick learner, which is probably why I've managed to score well consistently. Right now, I'm diving deeper into backend development. There's just something about building the foundation of applications that really excites me. I'm constantly looking for opportunities to learn and grow in this field. It's an exciting journey, and I can't wait to see where it takes me.
+
+                    </p>
+                    <div class="tabTittles">
+                        <p class="tabLinks activeLink" onclick="opentab('skills')">Skills</p>
+                        <p class="tabLinks" onclick="opentab('education')">Education</p>
+                        <p class="tabLinks" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <!-- Start -->
+                    <div class="tabContents activeTab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span> <br>
+                                Using MERN stack Building Scalable Web Applications.
+                            </li>
+
+                            <li><span>Database Administrator</span> <br>
+                                Skilled in MySQL and ORACLE as DBA. Expertise on MongoDB.</li>
+
+                            <li><span>PHP Developer</span> <br>
+                                Build so many Scalable projects Using PHP in Backend.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Next part -->
+
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li><span>BCA - (2022-2025) - 9.1 CGPA</span> <br>
+                                BRAINWARE UNIVERSITY | Kolkata | W.B.
+                            </li>
+
+                            <li><span>HSC - (2020-2022) - 96.2 % </span> <br>
+                                Dakshin Moyna High School(HS) | WBCHSE</li>
+
+                            <li><span>SSC - (2019-2020) - 82.7 % </span> <br>
+                                Asnan High School | WBBSE </li>
+                        </ul>
+                    </div>
+
+                    <!-- Next part -->
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li><span>Web Developer Intern @Codealpha</span> <br>
+                                Gathered Hands on working Experience on multiple technologies - React, Node, MongoDB
+                            </li>
+
+                            <li><span>Backend Intern @Apna College </span> <br>
+                                Build some scalable projects using Express, Node and MongoDB</li>
+
+                            <li><span>FrontEnd Intern @Prodigy InfoTech</span> <br>
+                                Works on so many FrontEnd Projects with Experienced Guide.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End -->
+
+                </div>
+                <div class="aboutCol2">
+                    <img src="./assets/Userr.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="servicesList">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Development</h2>
+                    <p>I can build some cool and asthetic UI / FrontEnd for your Web Applications. The FrontEnd tools
+                        I'm habituated of using those are React JS, Bootstrap CSS and CSS3. Apart form that I can easily
+                        learn new technologies as per user's need...</p>
+                    <a href="underProcess.html" target="_blank">Learn more+</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Backend Development</h2>
+                    <p>The most popular MERN (MongoDB, Express JS, React JS, Node JS) stack and using PHP as Backend,
+                        I've a handful Expertise on working as a Backend Developer. While building Web ApplicationsI I
+                        force on Scalability and Fast Data Fetching from the SERVER...</p>
+                    <a href="underProcess.html" target="_blank">Learn more+</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Administrator</h2>
+                    <p>Acquired some real life Hands on Experiments on MySQL Database, ORACLE Server and MongoDB.
+                        Currently pursuing a DBA certification from ORACLE. For your Enterprise level schema Design can
+                        contact with me. Along with that I can handle DevOps also...</p>
+                    <a href="underProcess.html" target="_blank">Learn more+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio or Projects Section -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="./assets/unsplash.jpg" alt="pinterest-unsplash-clone">
+                    <div class="layer">
+                        <h3>Image Search App</h3>
+                        <p>It's quite similar website of the mixture of Unsplash and Pinterest. Using HTML, CSS and
+                            JavaScript I build that. For some educational purpose we needed some free images, that's can
+                            be the best fit for the scenario.</p>
+                        <a href="https://pinterest-unsplash.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./assets/adoptmeee.jpg" alt="Pet Adoption Project">
+                    <div class="layer">
+                        <h3>ADOPT MEEE</h3>
+                        <p>A Pet Adoption website Build using HTML and Bootstrap CSS. The main AIM of this project is to
+                            promote the ADOPTION rather than buying a PET spending a huge capital. To sustain the life
+                            of street DOGs</p>
+                        <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./assets/dbport.jpg" alt="My Portfolio Website">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Build so many Portfolio Projects for myself and specially for friends those have don't so
+                            much time to build these type of projects. I build those for my practice also I let them to
+                            know the Formation of each part. </p>
+                        <a href="https://saptadipparshi.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/debasish-barman-0011" class="btn" target="_blank">Checkout more +</a>
+
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>d.barman.dev@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> +91 731937XX98</p>
+
+                    <div class="socialIcons">
+                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/debasish_barman0011/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/debasish-barman-0011" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/Debasish__1" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+
+                    </div>
+                    <a href="./assets/CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contactRight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="footer">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>More About Me</h3>
+                    <a href="underProcess.html" target="_blank" >Childhood</a>
+                    <a href="underProcess.html" target="_blank" >Family</a>
+                    <a href="underProcess.html" target="_blank" >Friends</a>
+                    <a href="underProcess.html" target="_blank" >SSC Memory</a>
+                    <a href="underProcess.html" target="_blank" >HSC Memory</a>
+                    <a href="https://www.brainwareuniversity.ac.in/" target="_blank">UNIVERSITY</a>
+                </div>
+
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="underProcess.html" target="_blank">Events</a>
+                </div>
+                <div class="box">
+                    <h3>Visit Sites</h3>
+                    <a href="https://dbport.netlify.app/" target="_blank">Portfolio</a>
+                    <a href="https://pinterest-unsplash.netlify.app/" target="_blank">Image App</a>
+                    <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank">ADOPT MEEE</a>
+                    <a href="https://digital-clock-ist.netlify.app/" target="_blank">Digital Clock</a>
+                    <a href="underProcess.html" target="_blank">Random Photo</a>
+                    <a href="https://www.brainwareuniversity.ac.in/" target="_blank">My UNIVERSITY</a>
+                </div>
+                <div class="box">
+                    <h3>Follow Me</h3>
+                    <a target="_blank" href="https://www.facebook.com/mr.debasish.barman">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/debasish_barman0011/">Instagram</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/debasish-barman-923806280/">Linkedin</a>
+                    <a target="_blank" href="underProcess.html">Pinterest</a>
+                    <a target="_blank" href="underProcess.html">Telegram</a>
+                    <a target="_blank" href="underProcess.html">Youtube</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>Copyright &copy;2024. Made with <i class="fa-solid fa-heart"></i> by Debasish Barman.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="formData.js"></script>
+
+    <script src="scroll.js"></script>
+</body>
+
+</html>
