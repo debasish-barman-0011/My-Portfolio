@@ -1,0 +1,66 @@
+
+
+/* Customer Review Section */
+.review .reviewBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .review .reviewBoxContainer .reviewBox {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .review .reviewBoxContainer .reviewBox .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+  }
+  
+  .review .reviewBoxContainer .reviewBox .stars i {
+    color: var(--primary);
+    font-size: 2rem;
+  }
+  
+  .review .reviewBoxContainer .reviewBox p {
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+  }
+  
+  .review .reviewBoxContainer .reviewBox .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  
+  .review .reviewBoxContainer .reviewBox .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  .review .reviewBoxContainer .reviewBox .user h3 {
+    font-size: 1.5rem;
+    color: #999;
+  }
+  
+  .review .reviewBoxContainer .reviewBox .user span {
+    font-size: 1.5rem;
+    color: #999;
+  }
+  
+  /* End of Customer Review */
+  
+  
+  
+  

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/webIcon.png" type="image/x-icon">
+        <title>&#128994 Download Resume | Debasish Barman</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="./css/newstyle.css">
+        <link rel="stylesheet" href="./css/resume.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <link rel="stylesheet" href="./css/newfooter.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <script>
+      async function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        try {
+          // Submit the form data
+          const response = await fetch(
+            "https://script.google.com/macros/s/AKfycbw_rJxnMaZyOj09IIit0x_66lU3mljZ8Krj919yu2CiRCL8XdbMBSi9r9x6Pmbdr-4/exec",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
+
+          if (response.ok) {
+            // If submission is successful, trigger the file download
+            const downloadUrl = "/assets/Old Resume Debasish Barman.pdf";
+            const link = document.createElement("a");
+            link.href = downloadUrl;
+            link.download = "Old Resume Debasish Barman.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          } else {
+            alert("Form submission failed.");
+          }
+        } catch (error) {
+          console.error("Error submitting the form:", error);
+          alert("Error submitting the form. Please try again.");
+        }
+      }
+        </script>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="" class="logo">
+                My
+                <span>Resume</span>
+            </a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="Education.html">Academics</a>
+                <a href="Achievements.html">Achievements</a>
+            </nav>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://www.facebook.com/mr.debasish.barman" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="./assets/sqareBanner.jpg" target="_blank" class="fas fa-user"></a>
+            </div>
+        </header>
+        <!-- End of Header Part -->
+        <button id="viewButton" class="view-button btn">
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+        </button>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>Quick</span>
+                Contact
+            </h1>
+            <div class="row">
+                <form class="form" name="submit-to-google-sheet" onsubmit="handleSubmit(event)">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Debasish__1" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/debasish_barman0011/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-whatsapp">
+                            </i
+            >
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-telegram">
+                            </i
+            >
+                        </a>
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        class="inputBox"
+                        name="Name"
+                        required
+                    >
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        class="inputBox"
+                        required
+                    >
+                    <input
+                        type="number"
+                        name="Mobile"
+                        placeholder="Mobile"
+                        class="inputBox"
+                        required
+                    >
+                    <textarea
+                        name="Purpose"
+                        class="inputBox"
+                        placeholder="Your Message"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <input
+                        type="submit"
+                        value="Download Resume"
+                        class="btn"
+                        id="btnSubmit"
+                    >
+                </form>
+                <div class="image">
+                    <img src="/assets/working.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End of Contact Section -->
+        <!-- Footer Section -->
+        <section class="footer">
+            <div class="boxContainer">
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html">About</a>
+                    <a href="Education.html">Academics</a>
+                    <a href="Achievements.html">Achievements</a>
+                    <a href="community.html">Community</a>
+                </div>
+                <div class="box">
+                    <h3>Important links</h3>
+                    <a href="Certifications.html">Certifications</a>
+                    <a href="Top Skills.html">My Skills</a>
+                    <a href="Resources.html">Resources</a>
+                    <a href="underProcess.html">Privacy Policy</a>
+                    <a href="underProcess.html">Feedback</a>
+                </div>
+                <div class="box">
+                    <h3>Contact info</h3>
+                    <a href="">+91 9073532270</a>
+                    <a href="">d.barman.dev@gmail.com</a>
+                    <a href="">Barasat, West Bengal</a>
+                    <a href="index.html" target="_blank">Creator Profile</a>
+                    <a href="">Location Guide</a>
+                </div>
+                <div class="box">
+                    <h3>locations</h3>
+                    <a href="">Kolkata</a>
+                    <a href="">Delhi</a>
+                    <a href="">Banglore</a>
+                    <a href="">Noida</a>
+                    <a href="">Pune</a>
+                </div>
+            </div>
+            <div class="credit">
+                Designed & Developed by
+                <span>
+                    <a href="index.html" target="_blank">Debasish</a>
+                </span>
+            </div>
+        </section>
+        <!-- end -->
+        <section class="contact downloadCV" id="contact">
+            <div class="row">
+                <form
+                    name="submit-to-google-sheet"
+                    class="form"
+                    id="form"
+                    onsubmit="handleSubmit(event)"
+                >
+                    <div class="icons">
+                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Debasish__1" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/debasish_barman0011/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-whatsapp">
+                            </i
+            >
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-telegram">
+                            </i
+            >
+                        </a>
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        class="inputBox"
+                        name="Name"
+                        required
+                    >
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        class="inputBox"
+                        required
+                    >
+                    <input
+                        type="number"
+                        name="Mobile"
+                        placeholder="Mobile"
+                        class="inputBox"
+                        required
+                    >
+                    <textarea
+                        name="Purpose"
+                        class="inputBox"
+                        placeholder="Purpose of Downloading Resume"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <input
+                        type="submit"
+                        value="Request CV"
+                        class="btn"
+                        id="btnSubmit"
+                    >
+                    <input
+                        type="reset"
+                        value="Close"
+                        class="btn close"
+                        id="close"
+                    >
+                </form>
+                <div class="image">
+                    <!-- <img src="/assets/sqareBanner.jpg" alt=""> --></div>
+            </div>
+        </section>
+        <script src="./js/submitResumeData.js"></script>
+        <script>
+      const viewButton = document.getElementById("viewButton");
+      const contact = document.querySelector(".downloadCV");
+      const closeButton = document.getElementById("close");
+
+      viewButton.addEventListener("click", function () {
+        contact.style.display = "block";
+        viewButton.style.display = "none";
+      });
+
+      closeButton.addEventListener("click", function () {
+        contact.style.display = "none";
+        viewButton.style.display = "block";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === container) {
+          contact.style.display = "none";
+        }
+      });
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          contact.style.display = "none";
+        });
+        </script>
+    </body>
+</html>

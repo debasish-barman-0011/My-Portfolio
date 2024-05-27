@@ -1,0 +1,69 @@
+/* Color & other useful variables */
+
+:root {
+  --primary: #ff004f;
+  --secondary: #04aa6d;
+  --tertiary: #3F51B5;
+  --quaternary: #FFA500;
+  --header: #2F3030;
+  --footerText: #DFDFE0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--primary);
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(232, 233, 160, 0.151);
+}
+
+.heading span {
+  color: var(--primary);
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,55 @@
+
+/* footer Section  */
+.footer{
+  background: #E0E0E0;
+}
+
+.footer .boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+  }
+  
+  .footer .boxContainer .box {
+    flex: 1 1 25rem;
+  }
+  
+  .footer .boxContainer .box h3 {
+    color: #333;
+    font-size: 2.3rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .boxContainer .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .boxContainer .box a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  
+  .footer .boxContainer .box img {
+    margin-top: 1rem;
+  }
+  .footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer .credit span a {
+    color: var(--primary);
+  }
+  
+
+  /* End of Footer CSS */
+  

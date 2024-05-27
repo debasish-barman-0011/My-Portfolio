@@ -1,0 +1,105 @@
+/* Header CSS */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #282a35;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 3rem;
+    color: var(--secondary);
+    font-weight: bolder;
+  }
+  
+  header .logo span {
+    color: var(--primary);
+  }
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #f1f1f1;
+    transition: 0.4s ease;
+  }
+  header .navbar a:hover {
+    color: var(--primary);
+  }
+  
+  header .icons a {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-left: 1.5rem;
+  }
+  
+  header .icons a:hover {
+    color: var(--primary);
+  }
+  
+  header #toggler {
+    display: none;
+  }
+  
+  header .fa-bars {
+    font-size: 3rem;
+    color: #f1f1f1;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgb(180, 180, 180);
+    display: none;
+  }
+  
+  /* Media for Responsive Navbar */
+  @media (max-width: 940px) {
+    html {
+      font-size: 55%;
+    }
+    header {
+      padding: 2rem 5%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header .fa-bars {
+      display: block;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #282a35;
+      clip-path: polygon(0 0, 100% 0, 0 0);
+      border-top: 0.1rem solid rgba(206, 202, 202, 0.779);
+    }
+  
+    header #toggler:checked ~ .navbar {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background-color: var(--secondary);
+      border: 0.1rem solid rgba(206, 202, 202, 0.779);
+      display: block;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    html {
+      font-size: 50%;
+    }
+  }
+  
+  /* End of header CSS */
+  
+  
+  
