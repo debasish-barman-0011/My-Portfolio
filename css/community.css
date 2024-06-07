@@ -5,7 +5,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #636161;
+    background-color: var(--bodyBg);
     scroll-behavior: smooth;
 }
 
@@ -20,12 +20,23 @@ body {
 }
 
 .profile-box {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #303a3a;
+    border: 1px solid #4b7ac5;
     border-radius: 8px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    
+    /* box-shadow: #f0f0f0 1px 3px 5px, #F0F0F0 1px 3px 5px; */
+    box-shadow: 
+    0 0 4px rgba(255, 0, 0, 0.4),    
+    0 0 8px rgba(255, 165, 0, 0.5), 
+    0 0 12px rgba(255, 255, 0, 0.5), 
+    0 0 16px rgba(0, 255, 0, 0.5),   
+    0 0 20px rgba(0, 0, 255, 0.5),   
+    0 0 24px rgba(75, 10, 130, 0.3), 
+    0 0 28px rgba(238, 130, 238, 0.2);
+
     transition: transform 0.3s;
     position: relative;
 }
@@ -38,8 +49,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    aspect-ratio: 1/1;
     margin: 0 auto 10px;
 }
 
@@ -68,30 +79,45 @@ body {
 .profile-photo:hover .visit-link {
     opacity: 1;
 }
-
+.profile-photo:hover{
+    border-radius: 5px;
+    
+}
 h3 {
     margin: 10px 0;
     font-size: 1.5em;
+    color: #f3f3f3;
 }
 
 .profile-box span {
     display: block;
     font-size: 1.4rem;
-    color: #555;
+    font-weight: 400;
+    color: #CCC;
 }
 
 button.know-more {
-    background: #ff004f;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
+         padding: 8px 16px;
+        font-size: 14px;
+        color: #fff;
+         background-color: #007bff;
+         border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 15px;
+        transition: 0.3s ease;
+
 }
 
+
+
 button.know-more:hover {
-    background: #AA6f4D;
+    /* background: #AA6f4D; */
+    background-color: #f1f1f1;
+    /* border: 1px solid #007bff; */
+    color: #ff004f;
+    font-weight: bold;
 }
 
 .popup {
@@ -108,12 +134,13 @@ button.know-more:hover {
 }
 
 .popup-content {
-    background: #fff;
+    background: #3a3030;
     padding: 20px;
     border-radius: 8px;
     width: 80%;
     max-width: 500px;
     position: relative;
+    color: #fff;
 }
 
 .close-btn {
@@ -122,5 +149,6 @@ button.know-more:hover {
     right: 15px;
     font-size: 28px;
     cursor: pointer;
+    color: #ff004f;
 }
 

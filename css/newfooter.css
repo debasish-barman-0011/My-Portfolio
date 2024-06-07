@@ -1,7 +1,7 @@
 
 /* footer Section  */
 .footer{
-  background: #E0E0E0;
+  background: #1c1e24;
 }
 
 .footer .boxContainer {
@@ -16,14 +16,14 @@
   }
   
   .footer .boxContainer .box h3 {
-    color: #333;
-    font-size: 2.3rem;
-    padding: 1rem 0;
+    color: #f1f1f1b4;
+    font-size: 2.2rem;
+    padding: 0.8rem 0;
   }
   
   .footer .boxContainer .box a {
     display: block;
-    color: #666;
+    color: #ccc;
     font-size: 1.5rem;
     padding: 1rem 0;
   }
@@ -41,13 +41,13 @@
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #333;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
+    color: #d1d1d1b6;
+    border-top: 0.2rem solid rgba(237, 237, 237, 0.5);
   }
   
   .footer .credit span a {
-    color: var(--primary);
+    color: var(--secondary);
   }
   
 

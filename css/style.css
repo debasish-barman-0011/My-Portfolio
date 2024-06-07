@@ -86,7 +86,7 @@ span {
 /* About Section */
 
 #about {
-  padding: 80px 0;
+  padding: 70px 0;
   color: #ababab;
 }
 
@@ -108,7 +108,7 @@ span {
 }
 
 .subtitle {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: #fff;
 }
@@ -154,11 +154,23 @@ span {
 .tabContents.activeTab {
   display: block;
 }
-
+.tabContents ul li span a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #aaa;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.tabContents ul li span a:hover {
+  color: #fff;
+  font-size: 16px;
+}
 /* Services Section */
 
 #services {
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 .servicesList {
@@ -170,7 +182,7 @@ span {
 .servicesList div {
   background-color: #262626;
   padding: 40px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
@@ -182,14 +194,14 @@ span {
 }
 
 .servicesList div h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 .servicesList a {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 20px;
   display: inline-block;
 }
@@ -202,7 +214,7 @@ span {
 /* Projects section */
 
 #portfolio {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .workList {
@@ -287,7 +299,9 @@ span {
 }
 
 /* Contact Section  */
-
+#contact {
+  padding: 60px 0;
+}
 .contactLeft {
   flex-basis: 35%;
 }
@@ -368,10 +382,4 @@ nav .fa-solid {
   display: none;
 }
 
-/* Google form/Sheet */
 
-/* #msg {
-  color: #0038c7;
-  margin-top: -40px;
-  display: block;
-} */
