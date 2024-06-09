@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root {
+  --primary: #ff004f;
+  --secondary: #04aa6d;
+  --tertiary: #3f51b5;
+  --quaternary: #ffa500;
+  --header: #2f3030;
+  --footerText: #dfdfe0;
+  --bodyBg: #080808;
+  --commonBg: #262626;
+}
+
+/* Some useful componets */
+.gradient2 {
+  background: linear-gradient(90deg, #fdbb2d, #22c1c3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient3 {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn3 {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid var(--primary);
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--tertiary);
+  transition: background 0.5s;
+}
+
+.btn3:hover {
+  background: var(--primary);
+}
+
+/* End of Useful Components */
+
 * {
   padding: 0;
   margin: 0;
@@ -10,16 +52,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #080808;
+  background: var(--bodyBg);
   color: #fff;
 }
-
-#header {
-  height: 100vh;
-  width: 100%;
-  background-image: url(/images/Black-Bg.jpg);
-  background-size: cover;
-  background-position: center;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -27,7 +64,7 @@ body {
 }
 
 nav {
-  background-color: #262626;
+  background-color: var(--commonBg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,6 +78,9 @@ nav {
 }
 nav img {
   margin-left: 30px;
+}
+nav img:hover {
+  cursor: wait;
 }
 nav ul li {
   display: inline-block;
@@ -59,7 +99,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 4px;
-  background: #ff004f;
+  background: var(--primary);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -70,24 +110,15 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.headerText {
-  margin-top: 20%;
-  font-size: 30px;
-  text-align: right;
-}
-.headerText h1 {
-  font-size: 60px;
-  margin-top: 20px;
-}
 span {
-  color: #ff004f;
+  color: var(--primary);
 }
 
 /* About Section */
 
 #about {
   padding: 70px 0;
-  color: #ababab;
+  color: #ddd;
 }
 
 .row {
@@ -103,6 +134,10 @@ span {
   width: 100%;
   border-radius: 15px;
 }
+.aboutCol2 img:hover {
+  opacity: 0.7;
+  cursor: wait;
+}
 .aboutCol1 {
   flex-basis: 60%;
 }
@@ -115,7 +150,7 @@ span {
 
 .tabTittles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 0 15px;
 }
 
 .tabLinks {
@@ -130,7 +165,7 @@ span {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #ff004f;
+  background-color: var(--primary);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -142,10 +177,11 @@ span {
 
 .tabContents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 15px 0;
+  color: #ddd;
 }
 .tabContents ul li span {
-  color: #04aa6d;
+  color: var(--secondary);
   font-size: 16px;
 }
 .tabContents {
@@ -156,8 +192,9 @@ span {
 }
 .tabContents ul li span a {
   text-decoration: none;
-  font-size: 14px;
-  color: #aaa;
+  display: inline-block;
+  font-size: 16px;
+  color: #ddd;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -165,7 +202,7 @@ span {
 }
 .tabContents ul li span a:hover {
   color: #fff;
-  font-size: 16px;
+  transform: translateX(10px);
 }
 /* Services Section */
 
@@ -176,11 +213,11 @@ span {
 .servicesList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  grid-gap: 20px;
+  margin-top: 20px;
 }
 .servicesList div {
-  background-color: #262626;
+  background-color: var(--commonBg);
   padding: 40px;
   font-size: 16px;
   font-weight: 300;
@@ -191,23 +228,24 @@ span {
 .servicesList div i {
   font-size: 50px;
   margin-bottom: 30px;
+  line-height: 0.2;
 }
 
 .servicesList div h2 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 .servicesList a {
   text-decoration: none;
-  color: #fff;
+  color: var(--footerText);
   font-size: 16px;
   margin-top: 20px;
   display: inline-block;
 }
 
 .servicesList div:hover {
-  background: #ff004f;
+  background: var(--tertiary);
   transform: translateY(-5px);
 }
 
@@ -240,7 +278,7 @@ span {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #04aa6d);
+  background: linear-gradient(rgba(255, 33, 33, 0.848), var(--secondary));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -263,7 +301,7 @@ span {
 }
 .layer a {
   margin-top: 20px;
-  color: #ff004f;
+  color: var(--primary);
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -286,7 +324,7 @@ span {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 2px solid #ff004f;
+  border: 2px solid var(--primary);
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -295,12 +333,12 @@ span {
 }
 
 .btn:hover {
-  background: #ff004f;
+  background: var(--primary);
 }
 
 /* Contact Section  */
 #contact {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 .contactLeft {
   flex-basis: 35%;
@@ -309,31 +347,45 @@ span {
   flex-basis: 60%;
 }
 .contactLeft p {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 .contactLeft p i {
-  color: #ff004f;
+  color: #ccc;
   margin-right: 15px;
   font-size: 25px;
+}
+.contactLeft p i:hover {
+  color: var(--secondary);
+}
+.contactLeft p a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+.contactLeft p a:hover {
+  color: #fff;
+  transform: translateX(8px);
 }
 .socialIcons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
   padding-top: 20px;
-  color: #ababab;
+  color: #ddd;
   display: inline-block;
   transition: transform 0.5s;
 }
 .socialIcons a:hover {
-  color: #ff004f;
+  color: var(--primary);
   transform: translateY(-4px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background: #080808;
-  border: 3px solid #ff004f;
+  background: var(--bodyBg);
+  border: 3px solid var(--primary);
   color: #fff;
 }
 
@@ -346,7 +398,7 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: var(--commonBg);
   padding: 15px;
   margin: 5px 0;
   color: #fff;
@@ -361,19 +413,17 @@ form .btn2 {
   cursor: pointer;
 }
 .btn:hover {
-  background: #ff004f;
+  background: var(--primary);
 }
 .copyright {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  background: var(--commonBg);
   margin-top: 20px;
   font-weight: 300;
 }
-.copyright i {
-  color: #ff004f;
-}
+
 /* End  */
 
 /* Open Close Menu */
@@ -381,5 +431,3 @@ form .btn2 {
 nav .fa-solid {
   display: none;
 }
-
-

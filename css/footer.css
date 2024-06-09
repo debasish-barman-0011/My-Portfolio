@@ -31,6 +31,10 @@
     text-decoration: underline;
 }
 
+.footer .box-container .box iframe{
+    padding-right: 18px;
+}
+
 @media(max-width: 450px) {
     .footer .box-container .box a {
         width: 100%;

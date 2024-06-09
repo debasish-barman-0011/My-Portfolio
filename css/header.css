@@ -1,5 +1,7 @@
 /* Header CSS */
-
+body{
+  overflow: hidden;
+}
 header {
   position: fixed;
   top: 0;

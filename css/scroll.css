@@ -1,11 +1,12 @@
 /* Scroll Indicator */
+
 #scrollIndicator {
+  background: linear-gradient(to right, rgba(4, 170, 109, 1), rgba(63, 81, 181, 1), rgba(255, 165, 0, 1), rgba(255, 0, 79, 1));
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #ff004f; 
-  z-index: 1000; 
-  transition: width 0.1s ease-in-out; 
+  z-index: 1000;
+  transition: width 0.1s ease-in-out;
 }

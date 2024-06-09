@@ -1,49 +1,72 @@
+:root {
+  --primary: #ff004f;
+  --secondary: #04aa6d;
+  --tertiary: #3f51b5;
+  --quaternary: #ffa500;
+  --header: #2f3030;
+  --footerText: #dfdfe0;
+  --bodyBg: #080808;
+}
 
 /* Icons Section */
 
 .iconsContainer {
-    background: #26262661;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-  .iconsContainer .icons {
-    background: #000;
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    flex: 1 1 25rem;
-  }
-  
-  .iconsContainer .icons img {
-    height: 5rem;
-    margin-right: 2rem;
-    imgcolor: #ff004f;
-  }
-  .iconsContainer .icons h3 {
-    color: #04aa6d;
-    padding-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .iconsContainer .icons span a{
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-  
-  .iconsContainer .icons span a:hover{
-    color: #ff004f;
-  }
-  /* End of Icons */
-  
-  
-  
-  .invert {
-    filter: invert(100%);
-  }
+  background: #26262661;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.iconsContainer .icons {
+  background: #000;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.iconsContainer .icons img {
+  height: 5rem;
+  margin-right: 2rem;
+}
+.iconsContainer .icons img:hover {
+  cursor:  none;
+  filter: invert(100%);
+}
+.iconsContainer .icons h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 79, 1),
+    rgba(4, 170, 109, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.iconsContainer .icons span a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.iconsContainer .icons span a:hover {
+  color: var(--primary);
+  transform: translateX(6px);
+}
+/* End of Icons */
+
+.invert {
+  filter: invert(80%);
+}

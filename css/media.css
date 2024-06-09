@@ -1,3 +1,16 @@
+:root {
+  --primary: #ff004f;
+  --secondary: #04aa6d;
+  --tertiary: #3f51b5;
+  --quaternary: #ffa500;
+  --header: #2f3030;
+  --footerText: #dfdfe0;
+  --bodyBg: #080808;
+  --commonBg: #262626;
+}
+
+/* Download Button */
+
 .Download {
   padding: 8px 16px;
   font-size: 20px;
@@ -19,15 +32,6 @@
 
 
 /* Media Section  */
-
-@media screen and (max-width: 1024px) {
-  #header {
-    height: 100vh;
-    width: 100%;
-    background-image: url(/images/1024.jpg);
-  }
-}
-
 /* Less than 870px */
 @media screen and (max-width: 1000px) {
   nav .fa-solid {
@@ -43,7 +47,7 @@
   }
 
   nav ul {
-    background: #04aa6d;
+    background: var(--secondary);
     position: fixed;
     top: 0;
     right: -200px;
@@ -68,26 +72,14 @@
 }
 
 /* Below 600px Display */
-
 @media screen and (max-width: 600px) {
-  #header {
-    background-image: url(/images/mobilee.jpg);
-  }
-
-  .headerText {
-    margin-top: 100%;
-    font-size: 16px;
-  }
-  .headerText h1 {
-    font-size: 26px;
-  }
 
   nav .fa-solid {
     display: block;
     font-size: 25px;
   }
   nav ul {
-    background: #04aa6d;
+    background: var(--secondary);
     position: fixed;
     top: 0;
     right: -300px;
@@ -137,17 +129,6 @@
 /* Below 435 */
 
 @media screen and (max-width: 435px) {
-  #header {
-    background-image: url(/images/mobile.jpg);
-  }
-
-  .headerText {
-    margin-top: 100%;
-    font-size: 12px;
-  }
-  .headerText h1 {
-    font-size: 20px;
-  }
 
   nav img {
     width: 150px;
@@ -163,7 +144,7 @@
   }
 
   nav ul {
-    background: #04aa6d;
+    background: var(--secondary);
     position: fixed;
     top: 0;
     right: -100%;
@@ -174,19 +155,10 @@
     transition: right 0.5s;
   }
 
-  .headerText {
-    margin-top: 100%;
-    font-size: 14px;
-  }
-  .headerText h1 {
-    font-size: 28px;
-  }
 }
 
 @media screen and (max-width: 360px) {
-  #header {
-    background-image: url(/images/mobile.jpg);
-  }
+ 
   nav ul {
     background: #04aa6d;
     position: fixed;
@@ -198,19 +170,11 @@
     z-index: 5;
     transition: right 0.4s;
   }
-
-  .headerText {
-    margin-top: 100%;
-    font-size: 18px;
-  }
-  .headerText h1 {
-    font-size: 30px;
-  }
 }
 
 @media screen and (max-width: 280px) {
   nav ul {
-    background: #ff004f;
+    background: var(--secondary);
     position: fixed;
     top: 0;
     right: -100%;
@@ -221,11 +185,4 @@
     transition: right 0.4s;
   }
 
-  .headerText {
-    margin-top: 100%;
-    font-size: 14px;
-  }
-  .headerText h1 {
-    font-size: 28px;
-  }
 }
