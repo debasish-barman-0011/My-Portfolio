@@ -1,3 +1,4 @@
+// tabLinks Functions in Home/index Page 
 let tablinks = document.getElementsByClassName("tabLinks");
 let tabContents = document.getElementsByClassName("tabContents");
 
@@ -13,7 +14,7 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("activeTab");
 }
 
-// From here open close menu
+// From here open close menu or Navbar Responses
 
 let sideMenu = document.getElementById("sideMenu");
 function openMenu() {
@@ -23,7 +24,5 @@ function openMenu() {
 function closeMenu() {
   sideMenu.style.right = "-100%";
 }
-
-
 
 

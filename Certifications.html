@@ -1,214 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>&#128994 Certifications | Debasish Barman |</title>
-        <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
-        <link rel="stylesheet" href="./css/community.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/newstyle.css">
-        <link rel="stylesheet" href="./css/newfooter.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        >
-        <style>
-                .footer .box-container .box a{
-                    font-size: 1.3rem;
-                }
-                .Download{
-                    padding: 8px 16px;
-                    font-size: 14px;
-                    color: #fff;
-                     background-color: #007bff;
-                     border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                    margin-top: 15px;
-}
 
-.Download:hover {
-    background-color: #f1f1f1;
-    border: 2px solid #007bff;
-    color: #007bff;
-}
-        </style>
-    </head>
-    <body>
-        <header>
-            <input type="checkbox" id="toggler">
-            <label for="toggler" class="fas fa-bars"></label>
-            <a href="" class="logo">
-                CourseWork
-                <span></span>
-            </a>
-            <nav class="navbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courseworks &#128994| Debasish Barman |</title>
+    <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/certificates.css">
+    <link rel="stylesheet" href="./css/community.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/Debasish Barman.png" alt="logo">
+        <ul id="sideMenu">
+
+            <li>
                 <a href="index.html">Home</a>
-                <a href="Resume-Download.html">Resume</a>
-                <a href="">Contact</a>
-            </nav>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank" class="fab fa-linkedin"></a>
-                <a href="https://www.facebook.com/mr.debasish.barman/" target="_blank" class="fab fa-facebook-f"></a>
-                <a href="./assets/sqareBanner.jpg" target="_blank" class="fas fa-user"></a>
-            </div>
-        </header>
-        <!-- End -->
-        <div class="container">
-            <div class="profile-box" data-bio="-by Vishwa Mohan (PW Skills)" data-description="&#128994 I recently completed a comprehensive Backend Development course with PW Skills, where I gained expertise in Node.js, Express.js, APIs, and MongoDB. This training enabled me to build robust server-side applications, manage efficient databases, and ensure seamless backend functionality for web applications. The course significantly enhanced my backend development skills, preparing me for real-world challenges.">
-                <h3>Backend - PW Skills</h3>
-                <span>Node, Express , MongoDB, APIs</span>
-                <button class="know-more">Know More +</button>
-                <button class="Download" id="downloadButton11">Download Certificate</button>
-            </div>
-            <!-- 2nd Certificate -->
-            <div class="profile-box" data-bio="-by Indian Institute of Remote Sensing (IIRS - ISRO)" data-description="&#128994 Recently completed an intensive certificate course on Geo-Data Sharing and Cyber Security from the prestigious Indian Institute of Remote Sensing (IIRS), Dehradun, affiliated with ISRO. 
+            </li>
+            <li>
+                <a href="#Delta">Web Development</a>
+            </li>
+            <li>
+                <a href="#Backend">Backend Development</a>
+            </li>
+            <li>
+                <a href="#Cyber-Security">Cyber-Security</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
 
-             Delved deep into the realms of cyber security, cyber crimes, and digital attacks prevalent in our interconnected world. Acquired comprehensive knowledge on precautionary measures to safeguard computer devices against intruders and hackers. 
-            
-            Equipped with insights into identifying and combating cyber threats, including phishing attacks, malware intrusions, and data breaches. Committed to promoting cyber safety and raising awareness about cyber bullying in everyday life. ">
-                <h3>Cyber Security - ISRO</h3>
-                <span>Security Threats, Solutions</span>
-                <button class="know-more">Know More +</button>
-                <button class="Download" id="downloadButton12">Download Certificate</button>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <!-- End of NavBar -->
+
+    <!-- Scrool Indicator -->
+    <div id="scrollIndicator"></div>
+
+    <div class="subNav">
+        <p class="subNavText">
+        <div id="greeting"></div>
+        </p>
+
+    </div>
+    <!-- Certifications -->
+    <!-- Courses Section -->
+    <div class="coursesContainer">
+        <!-- Row 1 -->
+        <div class="rowDiv" id="Backend">
+            <div class="courseDescription">
+                <h2>Backend Development - PW Skills</h2>
+                <p>&#128994 I recently completed a comprehensive Backend Development course with PW Skills, where I
+                    gained expertise in Node.js, Express.js, APIs, and MongoDB. This training enabled me to build robust
+                    server-side applications, manage efficient databases, and ensure seamless backend functionality for
+                    web applications. The course significantly enhanced my backend development skills, preparing me for
+                    real-world challenges.</p>
+                <h3>Key Learnings </h3>
+                <p class="learnings">&#128994 Basics of Backend</p>
+                <p class="learnings">&#128994 JavaScript Basics</p>
+                <p class="learnings">&#128994 Node Js, Express Js</p>
+                <p class="learnings">&#128994 MongoDB, Postman</p>
+                <p class="learnings lastChild">&#128994 REST APIs & Request Handling</p>
+                <button id="downloadButton11" class="downloadBtn">Download Certificate</button>
             </div>
-            <!-- 3rd Certificate -->
-            <div class="profile-box" data-bio="-by Team Infosys Springboard" data-description="&#128994 I recently completed the MERN Fundamentals course by Infosys Springboard, gaining proficiency in MongoDB, Express.js, React.js, and Node.js. This comprehensive training provided me with essential skills in full-stack development, including building dynamic web applications and managing server-side operations. The course emphasized practical projects, reinforcing my ability to integrate these technologies into cohesive, responsive applications.">
-                <h3>MERN Fundamentals</h3>
-                <span>MongoDB, Express, React, Node</span>
-                <button class="know-more">Know More +</button>
-                <button class=" Download" id="downloadButton13">Download Certificate</button>
+            <div class="courseImage">
+                <img src="./certificates/PW_page-0001.jpg" alt="Course 1">
             </div>
-            <!-- 4th Certificate -->
-            <div class="profile-box" data-bio=" -by Shraddha Khapra (Apna College)" data-description="&#128994 Throughout the course, I've delved deep into the world of web development, mastering 11+ impactful projects and acquiring expertise in 5+ frameworks. From enhancing my LinkedIn profile to fostering a successful programmer's mindset, every step of the way has been empowering. This course has not only honed my technical abilities but also taught me the importance of consistency and persistence. With newfound confidence and skills, I'm ready to embark on the next chapter of my coding journey.
-Apna College provided a platform for me to connect, network, and showcase my coding skills. I'm immensely grateful for the opportunities and encouragement along the way.">
-                <h3>Delta - Apna College</h3>
-                <span>MERN Stack Development</span>
-                <button class="know-more">Know More +</button>
-                <button class=" Download" id="downloadButton14">Download Certificate</button>
-            </div>
-            <!-- End of items -->
         </div>
-        <div class="popup">
-            <div class="popup-content">
-                <span class="close-btn">&times;</span>
-                <h3 style="font-size: 2.2rem;" class="popup-name"></h3>
-                <span style="font-size: 2.1rem;" class="popup-degree"></span>
-                <p style="font-size: 2rem;" class="popup-bio"></p>
-                <p style="font-size: 1.7rem;" class="popup-description"></p>
+
+        <!-- Row 2 -->
+        <div class="rowDiv" id="Cyber-Security">
+            <div class="courseDescription">
+                <h2>Geo-Data Sharing and Cyber Security - ISRO</h2>
+                <p>&#128994 Recently Completed An Intensive Certificate Course On Geo-Data Sharing And Cyber Security
+                    From The Prestigious Indian Institute Of Remote Sensing (IIRS), Dehradun, Affiliated With ISRO.
+                    Delved Deep Into The Realms Of Cyber Security, Cyber Crimes, And Digital Attacks Prevalent In Our
+                    Interconnected World. Acquired Comprehensive Knowledge On Precautionary Measures To Safeguard
+                    Computer Devices Against Intruders And Hackers. Equipped With Insights Into Identifying And
+                    Combating Cyber Threats, Including Phishing Attacks, Malware Intrusions, And Data Breaches.
+                    Committed To Promoting Cyber Safety And Raising Awareness About Cyber Bullying In Everyday Life.</p>
+                <h3 class="keyLearning">Key Learnings </h3>
+                <p class="learnings">&#128994 Geo-Data Models & Standards</p>
+                <p class="learnings">&#128994 Overview of Cyber Security</p>
+                <p class="learnings">&#128994 Threats and Challenges</p>
+                <p class="learnings">&#128994 Network Security Protocols</p>
+                <p class="learnings lastChild">&#128994 Safe Online Transaction</p>
+                <button id="downloadButton12" class="downloadBtn">Download Certificate</button>
+            </div>
+            <div class="courseImage">
+                <img src="./certificates/ISRO_page-0001.jpg" alt="Course 2">
             </div>
         </div>
-        <!-- Footer Section -->
-        <section class="footer">
-            <div class="boxContainer">
-                <div class="box">
-                    <h3>Quick links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a href="Education.html">Academics</a>
-                    <a href="Achievements.html">Achievements</a>
-                    <a href="community.html">Community</a>
-                </div>
-                <div class="box">
-                    <h3>Important links</h3>
-                    <a href="Certifications.html">Certifications</a>
-                    <a href="Top Skills.html">My Skills</a>
-                    <a href="Resources.html">Resources</a>
-                    <a href="underProcess.html">Privacy Policy</a>
-                    <a href="underProcess.html">Feedback</a>
-                </div>
-                <div class="box">
-                    <h3>Contact info</h3>
-                    <a href="tel: +91 9073532270">+91 9073532270</a>
-                    <a href="mailto: mail4barman@gmail.com">mail4barman@gmail.com</a>
-                    <a href="">Barasat, West Bengal</a>
-                    <a href="index.html" target="_blank">Creator Profile</a>
-                    <a href="">Location Guide</a>
-                </div>
-                <div class="box">
-                    <h3>locations</h3>
-                  
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.898082133559!2d88.49727497385541!3d22.732029227110914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2sBrainware%20University!5e0!3m2!1sbn!2sin!4v1716732838383!5m2!1sbn!2sin"
-                        width="100%"
-                        height="150"
-                        style="border: 0"
-                        allowfullscreen
-                        loading="lazy"></iframe>
+        <!-- Row 3 -->
+        <div class="rowDiv">
+            <div class="courseDescription">
+                <h2>MERN Stack Fundamentals</h2>
+                <p>&#128994 I Recently Completed The MERN Fundamentals Course By Infosys Springboard, Gaining
+                    Proficiency In MongoDB, Express.Js, React.Js, And Node.Js. This Comprehensive Training Provided Me
+                    With Essential Skills In Full-Stack Development, Including Building Dynamic Web Applications And
+                    Managing Server-Side Operations. The Course Emphasized Practical Projects, Reinforcing My Ability To
+                    Integrate These Technologies Into Cohesive, Responsive Applications.</p>
+                <h3>Key Learnings </h3>
+                <p class="learnings">&#128994 Idea of Web Application</p>
+                <p class="learnings">&#128994 React Js, AJAX</p>
+                <p class="learnings">&#128994 Databases, MongoDB</p>
+                <p class="learnings">&#128994 Node Js, Express Js</p>
+                <p class="learnings lastChild">&#128994 CMS and Request Handling</p>
+                <button id="downloadButton13" class="downloadBtn">Download Certificate</button>
+            </div>
+            <div class="courseImage">
+                <img src="./certificates/MERN_page-0001.jpg" alt="Course 3">
+            </div>
+               
+        </div>
+        <!-- Row 4 -->
+        <div class="rowDiv" id="Delta">
+            <div class="courseDescription">
+                <h2>Full-Stack Development - Apna College</h2>
+                <p>&#128994 Throughout The Course DELTA 3.0, I've Delved Deep Into The World Of Web Development,
+                    Mastering 11+ Impactful Projects And Acquiring Expertise In 5+ Frameworks. From Enhancing My
+                    LinkedIn Profile To Fostering A Successful Programmer's Mindset, Every Step Of The Way Has Been
+                    Empowering. This Course Has Not Only Honed My Technical Abilities But Also Taught Me The Importance
+                    Of Consistency And Persistence. With Newfound Confidence And Skills, I'm Ready To Embark On The Next
+                    Chapter Of My Coding Journey. Apna College Provided A Platform For Me To Connect, Network, And
+                    Showcase My Coding Skills. I'm Immensely Grateful For The Opportunities And Encouragement Along The
+                    Way.</p>
+                <h3>Key Learnings </h3>
+                <p class="learnings">&#128994 HTML, CSS, JavaScript</p>
+                <p class="learnings">&#128994 React Js, Git & Github</p>
+                <p class="learnings">&#128994 MySQL, MongoDB</p>
+                <p class="learnings">&#128994 Node Js, Express Js</p>
+                <p class="learnings lastChild">&#128994 REST APIs & Hosting</p>
+
+                <button id="downloadButton14" class="downloadBtn">Download Certificate</button>
+            </div>
+            <div class="courseImage">
+                <img src="./certificates/DELTA_page-0001.jpg" alt="Course 4">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- End of Certificates -->
+    <!-- Community Section -->
+    <div class="communityContainer">
+        <!-- Member 1 Details -->
+        <div class="itemContainer profile-box" data-bio="&#128994 BCA 2nd Year" data-description="Meet Rudradip Mukherjee, a dedicated and ambitious BCA student with a passion for computer science and a clear vision for his future. Aspiring to become a Computer Science Teacher at the college or university level, Rudradip combines his technical prowess with a natural talent for teaching.
+                An elegant coder, Rudradip is proficient in Java, JavaScript, Operating Systems, and DBMS. His coding skills are matched by his deep understanding of these subjects, enabling him to convey complex concepts with ease and clarity. With a strong foundation in both theory and practice, Rudradip is well-equipped to inspire and educate the next generation of computer scientists. His commitment to excellence and his passion for education make him an ideal candidate for a future professor in the field of computer science
+             ">
+
+            <div class="content">
+                <img src="./assets/rudradipMukherjee.jpeg" alt="">
+                <div class="description">
+                    <h3>Rudradip Mukherjee</h3>
+                    <span>Programmer | Teacher.</span>
                 </div>
             </div>
-            <div class="credit">
-                Designed & Developed by
+            <div class="actions">
+                <button class="visit"> <a target="_blank"
+                        href="https://www.linkedin.com/in/rudradipm/">Contact</a></button>
+                <button class="know-more"> Learn More </button>
+            </div>
+        </div>
+        <!-- Member 2 Details -->
+        <div class="itemContainer profile-box" data-bio="&#128994 |BCA 2nd Year"
+            data-description="Meet Sayan Maity, a passionate BCA student with a fervent interest in JavaScript and a keen understanding of the intricacies of the stock market. Sayan's journey extends beyond the confines of academia; in his spare time, he delves deep into the world of share markets, tirelessly researching investment opportunities across various platforms. Driven by a desire to carve his path, Sayan aspires to become an entrepreneur, leveraging his knowledge and insights to navigate the dynamic landscape of business and finance. With a strong foundation in technology and a shrewd eye for market trends, Sayan is poised to make a significant impact in the realms of both technology and entrepreneurship.">
+
+            <div class="content">
+                <img src="./assets/sayanMaity.jpeg" alt="Sayan">
+                <div class="description">
+                    <h3>Sayan Maity</h3>
+                    <span>Entrepreneur | Trader</span>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="visit"> <a href="https://maity.netlify.app/" target="_blank">Contact</a></button>
+                <button class="know-more"> Learn More </button>
+            </div>
+        </div>
+        <!-- Member 3 Details -->
+        <div class="itemContainer profile-box" data-bio="&#128994 |BCA 2nd Year"
+            data-description="Meet Subhradip Parshi, a charismatic and well-groomed individual with outstanding leadership and management skills. Aspiring to become a corporate trainer or company manager, his potential shines through in every situation. As a class representative, he consistently offers solutions to problems, showcasing his excellent management abilities. Subhradip is also a talented anchor and a skilled tabla player. Known for his high-speed typing and deep understanding of DSA, Java, and Machine Learning, he impresses both academically and socially. His charm and smartness often lead to new friendships, making him a beloved and supportive presence among his peers.">
+
+            <div class="content">
+                <img src="./assets/subhradipParshi.jpeg" alt="Subhradip">
+                <div class="description">
+                    <h3>Subhradip Parshi</h3>
+                    <span>Programmer | Designer</span>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="visit"> <a href="https://subradipparshi.netlify.app/"
+                        target="_blank">Contact</a></button>
+                <button class="know-more"> Learn More </button>
+            </div>
+        </div>
+        <!-- Member 4 Details -->
+        <div class="itemContainer profile-box" data-bio="&#128994 |BCA 2nd Year"
+            data-description="Ranajit Mondal is a passionate and ambitious individual currently pursuing a Bachelor of Computer Applications (BCA) with aspirations of advancing to an MBA. He possesses a strong command of Java and its frameworks, including Spring, JDBC, and Servlets, showcasing his technical proficiency and dedication to software development. Open-minded and eager to learn, Ranajit is enthusiastic about starting his career in IT companies, where he aims to leverage his skills and drive to achieve excellence in the field.">
+
+            <div class="content">
+                <img src="./assets/ranajitMondal.jpg" alt="Ranajit">
+                <div class="description">
+                    <h3>Ranajit Mondal</h3>
+                    <span>Java Developer</span>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="visit"> <a href="https://www.facebook.com/profile.php?id=100073811034854"
+                        target="_blank">Contact</a></button>
+                <button class="know-more"> Learn More </button>
+            </div>
+        </div>
+
+
+        <!-- Additional items here -->
+    </div>
+    <!-- Popup menu with member detials -->
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3 style="font-size: 1.7rem;" class="popup-name"></h3>
+            <span style="font-size: 1.3rem;" class="popup-degree"></span>
+            <p style="font-size: 1.1rem;" class="popup-bio"></p>
+            <p style="font-size: 1rem;" class="popup-description"></p>
+        </div>
+    </div>
+
+    <!-- Icon Section -->
+    <section class="iconsContainer">
+        <div class="icons">
+            <img class="invert" src="./icons/education.png" alt>
+            <div class="info">
+                <h3 class="gradient">Education</h3>
                 <span>
-                    <a href="index.html#about">Debasish</a>
+                    <a href="">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
                 </span>
             </div>
-        </section>
-        <script src="./js/community.js"></script>
-        <!-- Certificate 11 Download -->
-        <script>
-            document.getElementById('downloadButton11').addEventListener('click', function() {
+        </div>
+        <div class="icons">
+            <img class="invert" src="./icons/certificate.png" alt>
+            <div class="info">
+                <h3 class="gradient">Certifications</h3>
+                <span>
+                    <a href="">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="./icons/achievement.png" alt>
+            <div class="info">
+                <h3 class="gradient">My Achievements</h3>
+                <span>
+                    <a href="Achievements.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="./icons/skills.png" alt>
+            <div class="info">
+                <h3 class="gradient">Top Skills</h3>
+                <span>
+                    <a href="Top Skills.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="./icons/resources.png" alt>
+            <div class="info">
+                <h3 class="gradient">Resources</h3>
+                <span>
+                    <a href="Resources.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="./icons/community.png" alt>
+            <div class="info">
+                <h3 class="gradient">Our Community</h3>
+                <span>
+                    <a href="">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- End of the Icon section -->
+    <!-- Contact Section with Form -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p>
+                        <a href="mailto:mail4barman@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            Send an Email
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://wa.me/9073532270">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Chat on Whatsapp
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+91 9073532270">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Call Now
+                        </a>
+                    </p>
+                    <div class="socialIcons">
+                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/debasish_barman0011/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/debasish-barman-923806280/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/debasish-barman-0011" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/Debasish__1" target="_blank">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                    </div>
+                    <a href="Resume-Download.html" class="btn btn2" id="openModalBtn" onclick="openModal()">
+                        Download Resume
+                    </a>
+                </div>
+                <div class="contactRight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+                        <button id="btnSubmit" type="submit" class="btn btn2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Contact -->
+
+    <!-- Footer Sction -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Navigation</h3>
+                <a href="index.html">Back to Home</a>
+                <a href="index.html#about">About Me</a>
+                <a href="#Delta">Web Development</a>
+                <a href="#Backend">Backend Development</a>
+                <a href="#Cyber-Security">Cyber-Security</a>
+                <a href="Resume-Download.html">Download Resume</a>
+            </div>
+            <div class="box">
+                <h3>Useful Websites</h3>
+
+                <a href="https://pinterest-unsplash.netlify.app/" target="_blank">
+                    SnapSafari
+                </a>
+                <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank">
+                    ADOPT MEEE
+                </a>
+                <a href="https://bloomaz.netlify.app/" target="_blank">
+                    BloomAz
+                </a>
+                <a href="http://fiberflow.great-site.net/" target="_blank">FiberFlow</a>
+                <a href="https:bwuid.netlify.app/">
+                    Know Your ID
+                </a>
+                <a href="https://downloadme.onrender.com/" target="_blank">
+                    Youtube Downloader
+                </a>
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+                <a target="_blank" href="https://www.linkedin.com/in/debasish-barman-923806280/">
+                    Linkedin
+                </a>
+                <a target="_blank" href="https://www.facebook.com/mr.debasish.barman">
+                    Facebook
+                </a>
+                <a target="_blank" href="https://www.instagram.com/debasish_barman0011/">
+                    Instagram
+                </a>
+                <a href="">Pinterest</a>
+                <a href="">Telegram</a>
+                <a href="">Youtube</a>
+            </div>
+            <div class="box">
+                <h3>Permanent Address</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938844.153108378!2d84.85918215779066!3d21.607966940105058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02c0fd388251f3%3A0x4d359e98db5ee1a8!2z4Kao4Ka-4Kaw4Ka_4KaV4KeH4Kay4Kam4Ka5LCDgppPgpq_gprzgp4fgprjgp43gpp8g4Kas4KeH4KaZ4KeN4KaX4KayIDcyMTY0Mg!5e0!3m2!1sbn!2sin!4v1716647588936!5m2!1sbn!2sin"
+                    width="100%" height="220" style="border: 0" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- SubFooter -->
+    <div class="copyright">
+        <p class="gradient2">
+            Design & Developed by
+            <a class="gradient3" target="_blank" href="https://www.linkedin.com/in/debasish-barman-923806280/">
+                Debasish
+                Barman
+            </a>
+        </p>
+        <p class="update">Last update: 10th June 2024</p>
+    </div>
+    <!-- Inlinne Scripts -->
+
+    <!-- Certificate 11 Download -->
+    <script>
+        document.getElementById('downloadButton11').addEventListener('click', function () {
             const a = document.createElement('a');
 
-            a.href = './certificates/PW.pdf'; 
-            a.download = 'Debasish-Barman-Backend-Development-PW.pdf'; 
-    
+            a.href = './certificates/PW.pdf';
+            a.download = 'Debasish-Barman-Backend-Development-PW.pdf';
+
             document.body.appendChild(a);
-    
+
             a.click();
 
             document.body.removeChild(a);
-});
-        </script>
-        <!-- Certificate 12 Download -->
-        <script>
-            document.getElementById('downloadButton12').addEventListener('click', function() {
+        });
+    </script>
+    <!-- Certificate 12 Download -->
+    <script>
+        document.getElementById('downloadButton12').addEventListener('click', function () {
             const a = document.createElement('a');
 
-            a.href = './certificates/ISRO.pdf'; 
-            a.download = 'Debasish-Barman-Cyber-Security-ISRO.pdf'; 
-    
+            a.href = './certificates/ISRO.pdf';
+            a.download = 'Debasish-Barman-Cyber-Security-ISRO.pdf';
+
             document.body.appendChild(a);
-    
+
             a.click();
 
             document.body.removeChild(a);
-});
-        </script>
-        <!-- Certificate 13 Download -->
-        <script>
-            document.getElementById('downloadButton13').addEventListener('click', function() {
+        });
+    </script>
+    <!-- Certificate 13 Download -->
+    <script>
+        document.getElementById('downloadButton13').addEventListener('click', function () {
             const a = document.createElement('a');
 
-            a.href = './certificates/MERN.pdf'; 
-            a.download = 'Debasish-Barman-MERN-Infosys.pdf'; 
-    
+            a.href = './certificates/MERN.pdf';
+            a.download = 'Debasish-Barman-MERN-Infosys.pdf';
+
             document.body.appendChild(a);
-    
+
             a.click();
 
             document.body.removeChild(a);
-});
-        </script>
-        <!-- Certificate 14 Download -->
-        <script>
-            document.getElementById('downloadButton14').addEventListener('click', function() {
+        });
+    </script>
+    <!-- Certificate 14 Download -->
+    <script>
+        document.getElementById('downloadButton14').addEventListener('click', function () {
             const a = document.createElement('a');
 
-            a.href = './certificates/DELTA.pdf'; 
-            a.download = 'Debasish-Barman-DELTA.pdf'; 
-    
+            a.href = './certificates/DELTA.pdf';
+            a.download = 'Debasish-Barman-DELTA.pdf';
+
             document.body.appendChild(a);
-    
+
             a.click();
 
             document.body.removeChild(a);
-});
-        </script>
-    </body>
+        });
+    </script>
+    <!-- Java Scripts -->
+    <script src="./js/community.js"></script>
+    <!-- TabLinks Open Close & navBar Script -->
+    <script src="./js/script.js"></script>
+    <!-- GSheed Data Collection Script -->
+    <script src="./js/formData.js"></script>
+    <!-- greetBy Time Script -->
+    <script src="./js/timeGreet.js"></script>
+    <!-- ScroolBar Script -->
+    <script src="./js/scroll.js"></script>
+
+</body>
+
 </html>

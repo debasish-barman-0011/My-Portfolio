@@ -1,0 +1,120 @@
+@media screen and (max-width: 1050px) {
+    nav .fa-solid {
+      display: block;
+      font-size: 35px;
+    }
+    nav img {
+      margin-left: 30px;
+    }
+  
+    .fa-solid {
+      margin-right: 35px;
+    }
+  
+    nav ul {
+      background: var(--secondary);
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.8s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 25px;
+      text-align: center;
+    }
+    nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+  
+  }
+
+#greeting {
+  text-align: center;
+}
+/* Courses Section */
+.coursesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background: #26262661;
+}
+
+.rowDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: transparent;
+  padding: 1rem;
+  padding-top: 5rem;
+}
+
+.courseDescription,
+.courseImage {
+  flex: 1 1 100%;
+}
+
+.courseDescription h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, rgba(4, 170, 109, 1), rgba(63, 81, 181, 1), rgba(255, 165, 0, 1), rgba(255, 0, 79, 1));
+  text-align: center;
+}
+.courseDescription h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
+  
+}
+
+.courseDescription p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+.courseDescription .learnings{
+    color: #fff;
+}
+.courseDescription .lastChild {
+  padding-bottom: 2rem;
+}
+
+.courseDescription .downloadBtn {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.4s ease;
+}
+
+.courseDescription .downloadBtn:hover {
+  background: var(--secondary);
+}
+.courseImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #333;
+}
+.courseImage:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .courseDescription,
+  .courseImage {
+    flex: 1 1 48%;
+  }
+}

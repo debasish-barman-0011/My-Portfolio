@@ -1,0 +1,78 @@
+:root {
+    --primary: #ff004f;
+    --secondary: #04aa6d;
+    --tertiary: #3f51b5;
+    --quaternary: #ffa500;
+    --header: #2f3030;
+    --footerText: #dfdfe0;
+    --bodyBg: #080808;
+    --commonBg: #262626;
+  }
+
+#greeting{
+    padding-left: 30px !important;
+    text-shadow: 2px 2px var(--tertiary);
+    letter-spacing: 2px;
+}
+.resourceHeading{
+    text-align: center;
+    text-shadow: 3px 3px var(--quaternary);
+}
+.resourcesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem;
+    background: #26262661;
+}
+
+.resourcesContainer .textContainer,
+.resourcesContainer .videoContainer {
+    flex: 1 1 100%;
+    background: #000;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.resourcesContainer .textContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.resourcesContainer .textContainer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.textContainer a{
+    text-decoration: none;
+}
+.textContainer .Download{
+    color: var(--quaternary);
+    background: #2f3030;
+
+}
+.resourcesContainer .textContainer span {
+    font-size: 1.3rem;
+    color: var(--tertiary);
+    font-weight: 400;
+    text-align: center;
+}
+.textContainer ol li{
+    list-style: none;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+.resourcesContainer .videoContainer iframe {
+    width: 100%;
+    height: 315px;
+}
+
+@media (min-width: 768px) {
+    .resourcesContainer .textContainer,
+    .resourcesContainer .videoContainer {
+        flex: 1 1 48%;
+    }
+}
