@@ -7,11 +7,12 @@ Welcome to my portfolio website! This repository contains the code for my person
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Download My Resume](#download-resume)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Projects](#projects)
 - [Contact](#contact)
-- [License](#license)
+  
 
 ## Introduction
 
@@ -20,19 +21,19 @@ Hello, I am Debasish Barman, a passionate Full Stack Developer and BCA student a
 ## Features
 
 - **Responsive Design**: The website is fully responsive and works on various devices and screen sizes.
-- **About Me Section**: Provides a brief introduction and background information.
-- **Skills Section**: Highlights my technical skills and proficiencies.
-- **Projects Section**: Showcases my major projects with descriptions, technologies used, and live links.
-- **Contact Form**: Allows visitors to get in touch with me directly through the website.
-- **Social Media Links**: Quick access to my social media profiles.
+- **About Me Section**: A Passionate Full Stack Developer.
+- **Skills Section**: JavaScript, MongoDB, Node Js, Express JS, Wordpress.
+- **Projects Section**: See my projects with descriptions, technologies used, and live links.
+- **Contact Form**: Fill the foorm to get in touch with me directly through the website.
+- **Social Media Links**: Quick access to my social media profiles and follow me.
 
 ## Technologies Used
 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Bootstrap**
-- **Font Awesome**
+- **Google Sheet**
+- **Git & GitHub**
 
 ## Installation
 
@@ -72,11 +73,12 @@ Here are some of the major projects showcased on my portfolio:
 
 5. **FiberFlow**: [Live Demo](https://fiberflow.great-site.net)
     - Description: A user-friendly PHP dashboard for tracking broadband billing and ensuring connectivity.
+  
+## Download-Resume
+Wanna see my Resume? No worry, just visit [Download-Resume](https://debasish-barman-0011.github.io/My-Portfolio/Resume-Download.html), and click on Download Icon to get the Mandetory Resume-Download-Report Form. Once You Complete the procedure of submitting the form, it will start Downloading my Resume after 3 seconds.
 
 ## Contact
 
-If you'd like to get in touch, you can reach me via the contact form on my [portfolio website](https://debasish-barman-0011.github.io/My-Portfolio/), or connect with me on [LinkedIn](https://www.linkedin.com/in/debasish-barman-0011/).
+If you'd like to get in touch, you can reach me via the contact form on my [portfolio website](https://debasish-barman-0011.github.io/My-Portfolio/index.html#contact), or connect with me on [LinkedIn](https://www.linkedin.com/in/debasish-barman-0011/).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+## Thank You..
