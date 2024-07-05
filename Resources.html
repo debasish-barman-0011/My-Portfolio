@@ -17,7 +17,13 @@
         <link rel="stylesheet" href="./css/media.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/scroll.css">
-        <style></style>
+        <link rel="stylesheet" href="./css/icons.css">
+        <style>
+            .textContainer button a{
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
         <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -50,9 +56,6 @@
         <!-- Scrool Indicator -->
         <div id="scrollIndicator"></div>
         <div class="subNav">
-            <p class="subNavText">
-                <div id="greeting"></div>
-            </p>
             <h1 class="resourceHeading">Best Online Resources</h1>
         </div>
         <!-- End of SubHeading -->
@@ -60,7 +63,7 @@
         <div class="resourcesContainer">
             <!-- Row 1 -->
             <div class="textContainer">
-                <h2 class="resourceName">Front-End Development</h2>
+                <h2 class="resourceName">Frontend Development</h2>
                 <span class="keyTools">Internet Basics, HTML, CSS, JavaScript, Git GitHub</span>
                 <p class="Description">
                     Front-end development is about building the visual and interactive parts of websites
@@ -76,9 +79,9 @@
                 path for you!
                 </p>
                 <button class="Download">
-                    <a href="https://roadmap.sh/frontend" target="_blank"></a>
-                    Front-End
-                Roadmap
+                    <a href="https://roadmap.sh/frontend" target="_blank">
+                        Frontend Roadmap
+                    </a>
                 </button>
             </div>
             <div class="videoContainer">
@@ -131,7 +134,7 @@
                 ></iframe>
             </div>
             <div class="textContainer">
-                <h2>FrontEnd Projects</h2>
+                <h2>Frontend Projects</h2>
                 <span>Once You Complete HTML, CSS, JavaScript build some pojects.</span>
                 <p class="lastChild">
                     <ol type="1">
@@ -147,7 +150,8 @@
                     </ol>
                 </p>
                 <button class="Download">
-                    <a href=""></a>Explore Now
+                    <a href=""></a>
+                    Explore Now
                 </button>
             </div>
         </div>
@@ -155,7 +159,7 @@
         <div class="resourcesContainer">
             <!-- Row 1 -->
             <div class="textContainer">
-                <h2 class="resourceName">Back-End Development</h2>
+                <h2 class="resourceName">Backend Development</h2>
                 <span class="keyTools">
                     JavaScript (Node.js)||Python (Django, Flask)||PHP (Laravel)||Java (Spring) and SQL
                 Databases: (MySQL, PostgreSQL)||
@@ -173,7 +177,7 @@
                 career. I think you'd really enjoy it!
                 </p>
                 <button class="Download">
-                    <a href="https://roadmap.sh/backend" target="_blank"></a>Back-End Roadmap
+                    <a href="https://roadmap.sh/backend" target="_blank">Backend Roadmap</a>
                 </button>
             </div>
             <div class="videoContainer">
@@ -236,16 +240,93 @@
                         <li>Task Management App</li>
                         <li>User Authentication System</li>
                         <li>Simple Blog API</li>
-                        <li>Bookstore API</li>
+                        <!-- <li>Bookstore API</li> -->
                         <li>Library Management System</li>
                         <li>Online Booking Platform</li>
                     </ol>
                 </p>
                 <button class="Download">
-                    <a href=""></a>Explore Now
+                    <a href=""></a>
+                    Explore Now
                 </button>
             </div>
         </div>
+        <!-- End of Backend -->
+        <!-- Icon Section -->
+        <section class="iconsContainer">
+            <div class="icons">
+                <img class="invert" src="./icons/education.png" alt>
+                <div class="info">
+                    <h3 class="gradient">Education</h3>
+                    <span>
+                        <a href="Education.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="icons">
+                <img class="invert" src="./icons/certificate.png" alt>
+                <div class="info">
+                    <h3 class="gradient">Certifications</h3>
+                    <span>
+                        <a href="Certifications.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="icons">
+                <img class="invert" src="./icons/achievement.png" alt>
+                <div class="info">
+                    <h3 class="gradient">My Achievements</h3>
+                    <span>
+                        <a href="Achievements.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="icons">
+                <img class="invert" src="./icons/skills.png" alt>
+                <div class="info">
+                    <h3 class="gradient">Top Skills</h3>
+                    <span>
+                        <a href="Top Skills.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="icons">
+                <img class="invert" src="./icons/resources.png" alt>
+                <div class="info">
+                    <h3 class="gradient">Resources</h3>
+                    <span>
+                        <a href="">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="icons">
+                <img class="invert" src="./icons/community.png" alt>
+                <div class="info">
+                    <h3 class="gradient">Our Community</h3>
+                    <span>
+                        <a href="community.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Know more+
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
         <!-- Contact Section with Form -->
         <div id="contact">
             <div class="container">
@@ -388,7 +469,7 @@
                 Barman
                 </a>
             </p>
-            <p class="update">Last update: 9th June 2024</p>
+            <p class="update">Last update: 6th July 2024</p>
         </div>
         <!-- Java Scripts -->
         <script src="./js/community.js"></script>
@@ -396,8 +477,6 @@
         <script src="./js/script.js"></script>
         <!-- GSheed Data Collection Script -->
         <script src="./js/formData.js"></script>
-        <!-- greetBy Time Script -->
-        <script src="./js/timeGreet.js"></script>
         <!-- ScroolBar Script -->
         <script src="./js/scroll.js"></script>
     </body>
