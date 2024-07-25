@@ -1,215 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Download Resume | Debasish Barman</title>
-        <style>
-      :root {
-        --bg-color: #f0f0f0;
-        --text-color: #333;
-        --form-bg: #ffffff;
-        --form-shadow: rgba(0, 0, 0, 0.1);
-        --button-bg: #4e4c4c;
-        --button-text: white;
-        --input-border: #ccc;
-      }
 
-      .dark-theme {
-        --bg-color: #333;
-        --text-color: #f0f0f0;
-        --form-bg: #444;
-        --form-shadow: rgba(255, 255, 255, 0.1);
-        --button-bg: #bababa;
-        --button-text: #333;
-        --input-border: #555;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Resume | Debasish Barman |</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-      body {
-        font-family: "Arial", sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        transition: background-color 0.3s, color 0.3s;
-      }
+    :root {
+      --bg-color: #f0f0f0;
+      --text-color: #333;
+      --form-bg: #ffffff;
+      --form-shadow: rgba(0, 0, 0, 0.1);
+      --button-bg: #4e4c4c;
+      --button-text: white;
+      --input-border: #ccc;
+    }
 
-      .preloader,
-      .form-container {
-        text-align: center;
-      }
+    .dark-theme {
+      --bg-color: #333;
+      --text-color: #f0f0f0;
+      --form-bg: #444;
+      --form-shadow: rgba(255, 255, 255, 0.1);
+      --button-bg: #bababa;
+      --button-text: #333;
+      --input-border: #555;
+    }
 
-      .cake-icon {
-        width: 250px;
-        height: 250px;
-        cursor: pointer;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-      }
+    body {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.4s, color 0.4s;
+    }
 
-      .cake-icon:hover {
-        transform: scale(1.05);
-      }
-      .dark-theme .cake-icon {
-        filter: invert(100%);
-      }
-      .form-container {
-        display: none;
-        background-color: var(--form-bg);
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 0 20px var(--form-shadow);
-        width: 80%;
-        max-width: 500px;
-      }
+    .preloader,
+    .form-container {
+      text-align: center;
+    }
 
-      form {
-        display: flex;
-        flex-direction: column;
-      }
+    .cake-icon {
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
 
-      input,
-      textarea {
-        margin-bottom: 15px;
-        padding: 12px;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        border: 1px solid var(--input-border);
-        border-radius: 5px;
-        font-size: 16px;
-      }
+    .cake-icon:hover {
+      transform: scale(1.05);
+    }
 
-      button {
-        padding: 12px;
-        background-color: var(--button-bg);
-        color: var(--button-text);
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 16px;
-        transition: background-color 0.3s;
-      }
+    .dark-theme .cake-icon {
+      filter: invert(100%);
+    }
 
-      button:hover {
-        opacity: 0.9;
-      }
+    .form-container {
+      display: none;
+      background-color: var(--form-bg);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px var(--form-shadow);
+      width: 80%;
+      max-width: 500px;
+    }
 
-      #theme-toggle,
-      #home-button {
-        position: fixed;
-        padding: 10px 15px;
-        background-color: var(--button-bg);
-        color: var(--button-text);
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 14px;
-        z-index: 1000;
-      }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
 
-      #theme-toggle {
-        top: 20px;
-        right: 20px;
-      }
+    input,
+    textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 1px solid var(--input-border);
+      border-radius: 5px;
+      font-size: 16px;
+    }
 
-      #home-button {
-        top: 20px;
-        left: 20px;
-      }
-        </style>
-    </head>
-    <body>
-        <button id="theme-toggle">Change Theme</button>
-        <button id="home-button" onclick="location.href='index.html'">
-            Return to Home
-        </button>
-        <div class="preloader">
-            <img src="./icons/Download.png" alt="Click to Download Resume" class="cake-icon">
-        </div>
-        <div class="form-container">
-            <form id="resumeForm">
-                <input
-                    type="text"
-                    name="Name"
-                    placeholder="Name"
-                    required
-                >
-                <input
-                    type="email"
-                    name="Email"
-                    placeholder="Email"
-                    required
-                >
-                <input
-                    type="tel"
-                    name="Mobile"
-                    placeholder="Mobile"
-                    required
-                >
-                <textarea
-                    name="Purpose"
-                    placeholder="Purpose of Downloading Resume"
-                    rows="4"
-                    required
-                ></textarea>
-                <button type="submit">Submit and Download Resume</button>
-            </form>
-        </div>
-        <script>
-      const preloader = document.querySelector(".preloader");
-      const formContainer = document.querySelector(".form-container");
-      const cakeIcon = document.querySelector(".cake-icon");
-      const form = document.getElementById("resumeForm");
-      const themeToggle = document.getElementById("theme-toggle");
+    button {
+      padding: 12px;
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.5s;
+    }
 
-      cakeIcon.addEventListener("click", () => {
-        preloader.style.display = "none";
-        formContainer.style.display = "block";
-      });
+    button:hover {
+      opacity: 0.7;
+    }
 
-      themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-theme");
-        themeToggle.textContent = document.body.classList.contains("dark-theme")
-          ? "Light Theme"
-          : "Dark Theme";
-      });
+    #formSubmit {
+      background-color: #04aa6d;
+      color: #f0f0f0;
+    }
 
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
+    #theme-toggle,
+    #home-button {
+      position: fixed;
+      padding: 10px 15px;
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1000;
+    }
 
-        try {
-          const response = await fetch(
-            "https://script.google.com/macros/s/AKfycbw_rJxnMaZyOj09IIit0x_66lU3mljZ8Krj919yu2CiRCL8XdbMBSi9r9x6Pmbdr-4/exec",
-            {
-              method: "POST",
-              body: formData,
-            }
-          );
+    #theme-toggle {
+      top: 20px;
+      right: 20px;
+    }
 
-          if (response.ok) {
-            const downloadUrl = "/assets/Old Resume Debasish Barman.pdf";
-            const link = document.createElement("a");
-            link.href = downloadUrl;
-            link.download = "Old Resume Debasish Barman.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            form.reset();
-            formContainer.style.display = "none";
-            preloader.style.display = "block";
-          } else {
-            alert("Form submission failed. Please try again.");
+    #home-button {
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="theme-toggle">Change Theme</button>
+  <button id="home-button" onclick="location.href='index.html'">
+    Return to Home
+  </button>
+  <div class="preloader">
+    <img src="./icons/Download.png" alt="Click to Download Resume" class="cake-icon" />
+  </div>
+  <div class="form-container">
+    <form id="resumeForm">
+      <input type="text" name="Name" placeholder="Name" required />
+      <input type="email" name="Email" placeholder="Email" required />
+      <input type="tel" name="Mobile" placeholder="Mobile" required />
+      <textarea name="Purpose" placeholder="Purpose of Downloading Resume" rows="4" required></textarea>
+      <button id="formSubmit" type="submit">
+        Submit and Download Resume
+      </button>
+    </form>
+  </div>
+  <script>
+    const preloader = document.querySelector(".preloader");
+    const formContainer = document.querySelector(".form-container");
+    const cakeIcon = document.querySelector(".cake-icon");
+    const form = document.getElementById("resumeForm");
+    const themeToggle = document.getElementById("theme-toggle");
+
+    cakeIcon.addEventListener("click", () => {
+      preloader.style.display = "none";
+      formContainer.style.display = "block";
+    });
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      themeToggle.textContent = document.body.classList.contains("dark-theme")
+        ? "Light Theme"
+        : "Dark Theme";
+    });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbw_rJxnMaZyOj09IIit0x_66lU3mljZ8Krj919yu2CiRCL8XdbMBSi9r9x6Pmbdr-4/exec",
+          {
+            method: "POST",
+            body: formData,
           }
-        } catch (error) {
-          console.error("Error submitting the form:", error);
-          alert("Error submitting the form. Please try again.");
+        );
+
+        if (response.ok) {
+          const downloadUrl = "/assets/Old Resume Debasish Barman.pdf";
+          const link = document.createElement("a");
+          link.href = downloadUrl;
+          link.download = "Old Resume Debasish Barman.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          form.reset();
+          formContainer.style.display = "none";
+          preloader.style.display = "block";
+        } else {
+          alert("Form submission failed. Please try again.");
         }
-      });
-        </script>
-    </body>
+      } catch (error) {
+        console.error("Error submitting the form:", error);
+        alert("Error submitting the form. Please try again.");
+      }
+    });
+  </script>
+</body>
+
 </html>
