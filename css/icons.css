@@ -17,7 +17,6 @@
   gap: 0.6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
 }
 
 .iconsContainer .icons {
@@ -34,7 +33,7 @@
   margin-right: 2rem;
 }
 .iconsContainer .icons img:hover {
-  cursor:  none;
+  cursor: none;
   filter: invert(100%);
 }
 .iconsContainer .icons h3 {

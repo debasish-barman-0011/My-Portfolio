@@ -6,7 +6,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      // msg.innerHTML = "Thank You. I will reach out to you very soon.";
       setTimeout(function () {
         msg.innerHTML = "";
       }, 4000);
@@ -15,6 +14,8 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 
-document.getElementById("btnSubmit").addEventListener("click", function() {
-  alert("Thank you for reaching out! Click OK to post your message. I'll reply you as soon as possible.");
-}); 
+document.getElementById("btnSubmit").addEventListener("click", function () {
+  alert(
+    "Thank you for reaching out! Click OK to post your message. I'll reply you as soon as possible :)"
+  );
+});
