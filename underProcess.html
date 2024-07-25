@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Underprocess &#128992 | Debasish Barman</title>
-        <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
-        <style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underprocess &#128992 | Debasish Barman |</title>
+    <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
         :root {
             --bg-color: #f0f0f0;
             --text-color: #333;
@@ -27,7 +30,7 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: "Poppins", sans-serif;
             scroll-behavior: smooth;
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -96,7 +99,7 @@
 
         .modal-content {
             background-color: var(--modal-bg);
-            margin: 40px auto 15% auto; 
+            margin: 40px auto 15% auto;
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
@@ -125,7 +128,8 @@
             margin-bottom: 20px;
         }
 
-        #theme-toggle, #home-button {
+        #theme-toggle,
+        #home-button {
             position: fixed;
             padding: 10px 15px;
             background-color: var(--button-bg);
@@ -146,64 +150,60 @@
             top: 20px;
             left: 20px;
         }
-        </style>
-    </head>
-    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
-    <body>
-        <button id="theme-toggle">Change Theme</button>
-        <button id="home-button" onclick="location.href='index.html#about'">
-            <i class="fa-solid fa-house"></i> Home
-        </button>
-        <div class="center">
-            <h2 id="preloader-text">Click me!</h2>
-            <img
-                src="./assets/webIcon.png"
-                alt="Click to Visit"
-                class="preloader-image"
-                id="openModalBtn"
-            >
-        </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="./assets/working.jpg" alt="My Image">
-                <div id="content-not-available">
-                    <h2>Development Under Process! &#128997</h2>
-                    <p>
-                        I am continuously updating my website to provide you with the best experience. The content you are
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+
+<body>
+    <button id="theme-toggle">Change Theme</button>
+    <button id="home-button" onclick="location.href='index.html#about'">
+        <i class="fa-solid fa-house"></i> Home
+    </button>
+    <div class="center">
+        <h2 id="preloader-text">Click me!</h2>
+        <img src="./assets/webIcon.png" alt="Click to Visit" class="preloader-image" id="openModalBtn">
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./assets/working.jpg" alt="My Image">
+            <div id="content-not-available">
+                <h2>Development Under Process.</h2>
+                <p>
+                    I am continuously updating my website to provide you with the best experience. The content you are
                     looking for is currently under development and will be available very soon.
-                    </p>
-                    <p>
-                        In the meantime, please feel free to explore the rest of my website or send me a message through the
-                    contact section. I value your feedback and would love to hear from you!
-                    </p>
-                </div>
-                <button class="btn" onclick="location.href='index.html#about'">
-                    <i class="fa-solid fa-house"></i> Home
-                </button>
-                <button class="btn" onclick="location.href='index.html#contact'">
-                    <i class="fa-solid fa-phone-volume"></i> Contact
-                </button>
+                </p>
+                <p>
+                    In the meantime, please feel free to explore the rest of my website or send me a message through the
+                    contact section. I value your feedback and would love to hear from you.
+                </p>
             </div>
+            <button class="btn" onclick="location.href='index.html#about'">
+                <i class="fa-solid fa-house"></i> Home
+            </button>
+            <button class="btn" onclick="location.href='index.html#contact'">
+                <i class="fa-solid fa-phone-volume"></i> Contact
+            </button>
         </div>
-        <script>
+    </div>
+    <script>
         const modal = document.getElementById("myModal");
         const btn = document.getElementById("openModalBtn");
         const span = document.getElementsByClassName("close")[0];
         const themeToggle = document.getElementById('theme-toggle');
         const preloaderText = document.getElementById('preloader-text');
 
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
             preloaderText.style.display = "none";
         }
 
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
             preloaderText.style.display = "block";
         }
 
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
                 preloaderText.style.display = "block";
@@ -214,6 +214,7 @@
             document.body.classList.toggle('dark-theme');
             themeToggle.textContent = document.body.classList.contains('dark-theme') ? 'Light Theme' : 'Dark Theme';
         });
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
