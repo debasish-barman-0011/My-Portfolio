@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Download Resume | Debasish Barman |</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -130,6 +133,21 @@
       top: 20px;
       left: 20px;
     }
+
+
+    /* Sweet Alert Popup */
+    .swal2-popup {
+      font-size: 1rem !important;
+      width: auto !important;
+      max-width: 90% !important;
+    }
+
+    @media screen and (min-width: 768px) {
+      .swal2-popup {
+        font-size: 1.2rem !important;
+        max-width: 60% !important;
+      }
+    }
   </style>
 </head>
 
@@ -147,7 +165,7 @@
       <input type="email" name="Email" placeholder="Email" required />
       <input type="tel" name="Mobile" placeholder="Mobile" required />
       <textarea name="Purpose" placeholder="Purpose of Downloading Resume" rows="4" required></textarea>
-      <button id="formSubmit" type="submit">
+      <button onclick="showAlert()" id="formSubmit" type="submit">
         Submit and Download Resume
       </button>
     </form>
@@ -192,17 +210,39 @@
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
+          showAlert();
           form.reset();
           formContainer.style.display = "none";
           preloader.style.display = "block";
         } else {
-          alert("Form submission failed. Please try again.");
+          Swal.fire({
+            icon: "error",
+            title: "Download Failed!",
+            text: "Failed to Download Please Try Again.",
+          });
         }
       } catch (error) {
         console.error("Error submitting the form:", error);
-        alert("Error submitting the form. Please try again.");
+        Swal.fire({
+          icon: "error",
+          title: "Download Failed!",
+          text: "Failed to Download Please Try Again.",
+        });
       }
     });
+
+    function showAlert() {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Successfully Downloaded :)",
+        showConfirmButton: false,
+        timer: 1500,
+        customClass: {
+          popup: 'swal2-popup'
+        }
+      });
+    }
   </script>
 </body>
 

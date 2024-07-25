@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/scroll.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
     <style>
         .itemContainer img {
@@ -267,7 +267,7 @@
                         <input type="text" name="Name" placeholder="Enter Your Name" required>
                         <input type="email" name="Email" placeholder="Enter Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
-                        <button id="btnSubmit" type="submit" class="btn btn2">
+                        <button onclick="showAlert()" id="btnSubmit" type="submit" class="btn btn2">
                             Send Message
                         </button>
                     </form>

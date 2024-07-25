@@ -6,16 +6,58 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
+      if (response.ok) {
+        showSuccessAlert();
+      } else {
+        showErrorAlert("Internal Server Error, Please try again.");
+      }
+
       setTimeout(function () {
         msg.innerHTML = "";
       }, 4000);
       form.reset();
     })
-    .catch((error) => console.error("Error!", error.message));
+    .catch((error) => {
+      console.error("Error!", error.message);
+      showErrorAlert("An error occurred. Please try again.");
+    });
 });
 
-document.getElementById("btnSubmit").addEventListener("click", function () {
-  alert(
-    "Thank you for reaching out! Click OK to post your message. I'll reply you as soon as possible :)"
-  );
+document.getElementById("btnSubmit").addEventListener("click", function (e) {
+  e.preventDefault();
+  showConfirmationAlert();
 });
+function showConfirmationAlert() {
+  Swal.fire({
+    title: "Need Confirmation",
+    text: "Click Send to Post Your Message.",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Send",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      form.dispatchEvent(new Event("submit"));
+    }
+  });
+}
+
+function showSuccessAlert() {
+  Swal.fire({
+    title: "Success!",
+    text: "Message Send Successfully.",
+    icon: "success",
+    timer: 2000,
+    showConfirmButton: false,
+  });
+}
+
+function showErrorAlert(errorMessage) {
+  Swal.fire({
+    title: "Failed!",
+    text: "Internal Server Error!",
+    icon: "error",
+    confirmButtonText: "Try Again",
+  });
+}
