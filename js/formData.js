@@ -1,7 +1,6 @@
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyRzJrRVLwecLbAB6tNRvNUiWRwKgoLL2S6Wv3tQW8iSt645zYBd3b8NJ3XOc6Ym7Kf5g/exec";
 const form = document.forms["submit-to-google-sheet"];
-const msg = document.getElementById("msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
@@ -29,8 +28,8 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
 });
 function showConfirmationAlert() {
   Swal.fire({
-    title: "Need Confirmation",
-    text: "Click Send to Post Your Message.",
+    title: "Send Your Message?",
+    text: "",
     icon: "info",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
@@ -45,8 +44,8 @@ function showConfirmationAlert() {
 
 function showSuccessAlert() {
   Swal.fire({
-    title: "Success!",
-    text: "Message Send Successfully.",
+    title: "DONE",
+    text: "Thank You.",
     icon: "success",
     timer: 2000,
     showConfirmButton: false,
