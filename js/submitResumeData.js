@@ -6,17 +6,14 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      // msg.innerHTML = "Thank You. I will reach out to you very soon.";
       setTimeout(function () {
         msg.innerHTML = "";
-      }, 4000);
+      }, 3000);
       form.reset();
     })
     .catch((error) => console.error("Error!", error.message));
 });
 
-document.getElementById("btnSubmit").addEventListener("click", function() {
-
-  alert("Resume Download Request Has Been Processed. Click OK To Continue.");
-
-}); 
+// document.getElementById("btnSubmit").addEventListener("click", function () {
+//   alert("Resume Download Request Has Been Processed. Click OK To Continue.");
+// });
