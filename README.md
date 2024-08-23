@@ -16,17 +16,17 @@ Visit my portfolio at [https://dbport.netlify.app/](https://dbport.netlify.app/)
 
 - **Comprehensive Pages**:
 
-  - Click to Visit - [Achievements](https://debasish-barman-0011.github.io/My-Portfolio/Certifications.html) || Section.
+  - Click to Visit - [Achievements](https://debasish-barman-0011.github.io/My-Portfolio/Achievements.html) || Section.
 
   - Click to Visit - [Certifications](https://debasish-barman-0011.github.io/My-Portfolio/Certifications.html) || Section.
 
-  - Click to Visit - [Education](https://debasish-barman-0011.github.io/My-Portfolio/Certifications.html) || Section.
+  - Click to Visit - [Education](https://debasish-barman-0011.github.io/My-Portfolio/Education.html) || Section.
 
-  - Click to Visit - [Skills](https://debasish-barman-0011.github.io/My-Portfolio/Certifications.html) || Section.
+  - Click to Visit - [Skills](https://debasish-barman-0011.github.io/My-Portfolio/Top%20Skills.html) || Section.
 
-  - Click to Visit - [Resources](https://debasish-barman-0011.github.io/My-Portfolio/Certifications.html) || Section.
+  - Click to Visit - [Resources](https://debasish-barman-0011.github.io/My-Portfolio/Resources.html) || Section.
 
-  - Click to Visit - [Community Page](https://debasish-barman-0011.github.||My-Portfolio/Certifications.html) || Section.
+  - Click to Visit - [Community Page](https://debasish-barman-0011.github.||My-Portfolio/community.html) || Section.
 
 - **Interactive Contact Form**: Allows visitors to reach out to me. Submissions are stored in a Google Sheet for easy management and prompt responses.
 
@@ -46,7 +46,7 @@ Visit my portfolio at [https://dbport.netlify.app/](https://dbport.netlify.app/)
 - SweetAlert (for enhanced user experience).
 - Google Sheets (as a lightweight database).
 - GitHub and Netlify to host the website online.
-- Google Docs for Project Documentation available at [Link]()
+- Google Docs for Project Documentation available at [Link](https://docs.google.com/document/d/1XXdE7z3cXfAjXHu4aYpMZETQcNJC9TXWG49m6F_-LCQ/edit?usp=sharing)
 
 ## 🎨 Work in Progress
 
