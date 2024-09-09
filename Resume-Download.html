@@ -169,16 +169,20 @@
       </button>
     </form>
   </div>
+
+
   <script>
     const preloader = document.querySelector(".preloader");
     const formContainer = document.querySelector(".form-container");
     const cakeIcon = document.querySelector(".cake-icon");
     const form = document.getElementById("resumeForm");
     const themeToggle = document.getElementById("theme-toggle");
+    const submitButton = document.getElementById("formSubmit");
 
     cakeIcon.addEventListener("click", () => {
       preloader.style.display = "none";
       formContainer.style.display = "block";
+      checkFormValidity();
     });
 
     themeToggle.addEventListener("click", () => {
@@ -188,8 +192,39 @@
         : "Dark Theme";
     });
 
+    // Function to check if all form fields are filled //
+    function areAllFieldsFilled() {
+      const formData = new FormData(form);
+      for (const value of formData.values()) {
+        if (!value.trim()) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    // Function to check form validity and enable/disable submit button //
+    function checkFormValidity() {
+      submitButton.disabled = !areAllFieldsFilled();
+    }
+
+    // Add event listeners to all form inputs //
+    form.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('input', checkFormValidity);
+    });
+
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
+
+      if (!areAllFieldsFilled()) {
+        Swal.fire({
+          icon: "error",
+          title: "Incomplete Form",
+          text: "Please fill out all fields before submitting.",
+        });
+        return;
+      }
+
       const formData = new FormData(form);
 
       try {
@@ -202,46 +237,53 @@
         );
 
         if (response.ok) {
-          const downloadUrl = "/assets/Old Resume Debasish Barman.pdf";
-          const link = document.createElement("a");
-          link.href = downloadUrl;
-          link.download = "Old Resume Debasish Barman.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-          showAlert();
+          showSuccessAlert();
+          downloadResume();
           form.reset();
           formContainer.style.display = "none";
           preloader.style.display = "block";
         } else {
-          Swal.fire({
-            icon: "error",
-            title: "Download Failed!",
-            text: "Failed to Download Please Try Again.",
-          });
+          throw new Error("Form submission failed");
         }
       } catch (error) {
-        console.error("Error submitting the form:", error);
-        Swal.fire({
-          icon: "error",
-          title: "Download Failed!",
-          text: "Failed to Download Please Try Again.",
-        });
+        console.error("Error submitting your details:", error);
+        showErrorAlert("Submission Failed!", "Failed to submit the form. Please try again.");
       }
     });
 
-    function showAlert() {
+    function showSuccessAlert() {
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Done",
-        text: "Resume Successfully Downloaded",
+        title: "DONE",
+        text: "Resume downloading...",
         showConfirmButton: false,
-        timer: 1500,
+        timer: 2000,
         customClass: {
           popup: 'swal2-popup'
         }
       });
+    }
+
+    function showErrorAlert(title, text) {
+      Swal.fire({
+        icon: "error",
+        title: title,
+        text: text,
+        customClass: {
+          popup: 'swal2-popup'
+        }
+      });
+    }
+
+    function downloadResume() {
+      const downloadUrl = "/assets/Debasish Barman.pdf";
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.download = "Debasish Barman.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
   </script>
 </body>
