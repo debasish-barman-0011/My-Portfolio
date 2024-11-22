@@ -31,6 +31,7 @@ Visit my portfolio at [https://dbport.netlify.app/](https://dbport.netlify.app/)
 - **Interactive Contact Form**: Allows visitors to reach out to me. Submissions are stored in a Google Sheet for easy management and prompt responses.
 
 - **Resume Download**: Users can download my resume after filling out a basic form. This data is also collected in a Google Sheet for tracking purposes.
+- **Personal Locker**: Allows authorised users to access the Documents. I used Firebase Authentication here.
 
 - **Certificates and Achievements**: Downloadable from their respective pages.
 
@@ -45,6 +46,7 @@ Visit my portfolio at [https://dbport.netlify.app/](https://dbport.netlify.app/)
 - JavaScript
 - SweetAlert (for enhanced user experience).
 - Google Sheets (as a lightweight database).
+- Firebase (Backend as a Service) with Realtime Database.
 - GitHub and Netlify to host the website online.
 - Google Docs for Project Documentation available at [Link](https://docs.google.com/document/d/1XXdE7z3cXfAjXHu4aYpMZETQcNJC9TXWG49m6F_-LCQ/edit?usp=sharing)
 
@@ -86,7 +88,7 @@ Discover captivating photos at SnapSafari: [SnapSafari Live Demo](https://snap-s
 ## 🌟 CampusQuest :
 
 I Found a Glitch on Brainware University Portal and from there CampusQuest can access the original image of student ID cards.
-[CampusQuest Live Demo](https://debasish-barman-0011.github.io/Campus-Quest/)
+[CampusQuest Live Demo](https://bwuid.netlify.app/)
 
 ## 🌟 FiberFlow :
 
