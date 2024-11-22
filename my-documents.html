@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Documents - Debasish Barman</title>
+  <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff !important;
+    }
+
+    .navbar {
+      background-color: #000000 !important;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      border: 2px solid #3e2d1c;
+    }
+
+    .document-card {
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .document-card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .download-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: inherit;
+    }
+
+    .download-overlay .download-btn {
+      font-size: 4rem;
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      /* background: rgba(255, 255, 255, 0.2); */
+      background: #04aa6d;
+      border-radius: 10%;
+
+    }
+
+    .document-card:hover .download-overlay {
+      opacity: 1;
+    }
+
+    .document-card:hover .card-title {
+      display: none;
+    }
+
+    .url-card {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .url-card:hover {
+      background-color: #f8f9fa;
+      color: #ff004f;
+      transform: scale(1.05);
+    }
+
+    .container .navbar-brand {
+      color: #f0f0f0;
+    }
+
+    .container .navbar-brand:hover {
+      color: #ff004f;
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">DigiDrive</a>
+      <button class="btn btn-outline-danger" id="logoutBtn">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">My Personal Documents</h1>
+
+    <!-- Document Cards Section -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="Non_Tech.pdf">
+          <div class="card-body text-center">
+            <h5 class="card-title">Non Tech Resume</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="Tech.pdf">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tech Resume</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="SSC.pdf">
+          <div class="card-body text-center">
+            <h5 class="card-title">10th Marksheet</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="HSC.pdf">
+          <div class="card-body text-center">
+            <h5 class="card-title">12th Marksheet</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="Grade Cards Upto 4th Semester.pdf">
+          <div class="card-body text-center">
+            <h5 class="card-title">Graduation Marksheet</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6">
+        <div class="card document-card" data-file="#">
+          <div class="card-body text-center">
+            <h5 class="card-title">Others</h5>
+            <div class="download-overlay">
+              <button class="btn btn-light download-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important URLs Section -->
+    <h2 class="text-center mb-4">Important Links</h2>
+    <div class="row g-4">
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="https://www.linkedin.com/in/debasish-barman-923806280/">
+          <div class="card-body text-center">
+            <h5 class="card-title">LinkedIn Profile</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="https://github.com/debasish-barmanan-0011">
+          <div class="card-body text-center">
+            <h5 class="card-title">GitHub Profile</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="https://www.hackerrank.com">
+          <div class="card-body text-center">
+            <h5 class="card-title">HackerRank</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="https://leetcode.com">
+          <div class="card-body text-center">
+            <h5 class="card-title">LeetCode</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="https://www.coursera.org">
+          <div class="card-body text-center">
+            <h5 class="card-title">Coursera</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="card url-card" data-url="">
+          <div class="card-body text-center">
+            <h5 class="card-title">Others</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBRLwH3rb5bjTkOqiE1CqWWSGH-MoHZGCo",
+      authDomain: "docs-auth-5a02e.firebaseapp.com",
+      projectId: "docs-auth-5a02e",
+      storageBucket: "docs-auth-5a02e.firebasestorage.app",
+      messagingSenderId: "993709848971",
+      appId: "1:993709848971:web:f9ac126e24ae68e863578e"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    let inactivityTimer;
+
+    // Authentication state observer //
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        window.location.href = 'login.html';
+      }
+    });
+
+    // Logout function //
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      try {
+        await signOut(auth);
+        localStorage.removeItem('userLoggedIn');
+        window.location.href = 'login.html';
+      } catch (error) {
+        console.error('Logout error:', error);
+      }
+    });
+    // File Download and URLs //
+
+    // Document download functionality //
+    document.querySelectorAll('.download-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const documentCard = this.closest('.document-card');
+        const fileName = documentCard.dataset.file;
+
+        // Replace with your actual file path or download mechanism //
+        const downloadLink = document.createElement('a');
+        downloadLink.href = `./documents/${fileName}`;
+        downloadLink.download = fileName;
+        downloadLink.click();
+      });
+    });
+
+    // URL card click functionality //
+    document.querySelectorAll('.url-card').forEach(card => {
+      card.addEventListener('click', function () {
+        const url = this.dataset.url;
+        window.open(url, '_blank');
+      });
+    });
+
+    // Inactivity timer functions //
+    function resetInactivityTimer() {
+      clearTimeout(inactivityTimer);
+      inactivityTimer = setTimeout(async () => {
+        await signOut(auth);
+        localStorage.removeItem('userLoggedIn');
+
+        await Swal.fire({
+          icon: 'info',
+          title: 'Session Expired',
+          text: 'You have been logged out due to inactivity.',
+          showConfirmButton: false,
+          timer: 2000
+        });
+
+        window.location.href = 'login.html';
+      }, 180000); // 3 minutes
+    }
+
+    // Event listeners for user activity //
+    ['mousemove', 'keypress', 'click', 'touchstart'].forEach(event => {
+      document.addEventListener(event, resetInactivityTimer);
+    });
+
+    // Initialize timer //
+    resetInactivityTimer();
+  </script>
+</body>
+
+</html>

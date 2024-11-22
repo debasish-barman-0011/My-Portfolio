@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Login - Debasish Barman</title>
+  <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <style>
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2 class="text-center mb-4">Personal Locker</h2>
+    <div class="text-center mb-3">
+      <img src="https://dbport.netlify.app/assets/Userr.jpg" alt="Login" class="img-fluid">
+    </div>
+    <form id="loginForm">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInp" placeholder="name@example.com" required>
+        <label for="emailInp">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwordInp" placeholder="Password" required>
+        <label for="passwordInp">Password</label>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+      <p class="text-center">Don't have an account? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBRLwH3rb5bjTkOqiE1CqWWSGH-MoHZGCo",
+      authDomain: "docs-auth-5a02e.firebaseapp.com",
+      projectId: "docs-auth-5a02e",
+      storageBucket: "docs-auth-5a02e.firebasestorage.app",
+      messagingSenderId: "993709848971",
+      appId: "1:993709848971:web:f9ac126e24ae68e863578e"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Check if user is already logged in //
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        window.location.href = 'my-documents.html';
+      }
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', async function (evt) {
+      evt.preventDefault();
+
+      const email = document.getElementById('emailInp').value;
+      const password = document.getElementById('passwordInp').value;
+
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        localStorage.setItem('userLoggedIn', 'true');
+
+        await Swal.fire({
+          icon: 'success',
+          title: 'Login Successful!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+
+        window.location.href = 'my-documents.html';
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: error.message
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

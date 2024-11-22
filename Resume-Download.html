@@ -20,7 +20,7 @@
       --input-border: #ccc;
     }
 
-    .dark-theme {
+    /* .dark-theme {
       --bg-color: #333;
       --text-color: #f0f0f0;
       --form-bg: #444;
@@ -28,7 +28,7 @@
       --button-bg: #bababa;
       --button-text: #333;
       --input-border: #555;
-    }
+    } */
 
     body {
       font-family: "Poppins", sans-serif;
@@ -151,7 +151,7 @@
 </head>
 
 <body>
-  <button id="theme-toggle">Change Theme</button>
+  <button id="theme-toggle" onclick="location.href='my-documents.html'">My Locker</button>
   <button id="home-button" onclick="location.href='index.html'">
     Return to Home
   </button>
@@ -185,12 +185,7 @@
       checkFormValidity();
     });
 
-    themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-theme");
-      themeToggle.textContent = document.body.classList.contains("dark-theme")
-        ? "Light Theme"
-        : "Dark Theme";
-    });
+
 
     // Function to check if all form fields are filled //
     function areAllFieldsFilled() {
