@@ -20,15 +20,6 @@
       --input-border: #ccc;
     }
 
-    /* .dark-theme {
-      --bg-color: #333;
-      --text-color: #f0f0f0;
-      --form-bg: #444;
-      --form-shadow: rgba(255, 255, 255, 0.1);
-      --button-bg: #bababa;
-      --button-text: #333;
-      --input-border: #555;
-    } */
 
     body {
       font-family: "Poppins", sans-serif;
@@ -60,9 +51,6 @@
       transform: scale(1.05);
     }
 
-    .dark-theme .cake-icon {
-      filter: invert(100%);
-    }
 
     .form-container {
       display: none;
@@ -110,7 +98,7 @@
       color: #f0f0f0;
     }
 
-    #theme-toggle,
+    #locker,
     #home-button {
       position: fixed;
       padding: 10px 15px;
@@ -123,7 +111,7 @@
       z-index: 1000;
     }
 
-    #theme-toggle {
+    #locker {
       top: 20px;
       right: 20px;
     }
@@ -151,7 +139,7 @@
 </head>
 
 <body>
-  <button id="theme-toggle" onclick="location.href='my-documents.html'">My Locker</button>
+  <button id="locker" onclick="location.href='my-documents.html'">My Locker</button>
   <button id="home-button" onclick="location.href='index.html'">
     Return to Home
   </button>
@@ -176,7 +164,6 @@
     const formContainer = document.querySelector(".form-container");
     const cakeIcon = document.querySelector(".cake-icon");
     const form = document.getElementById("resumeForm");
-    const themeToggle = document.getElementById("theme-toggle");
     const submitButton = document.getElementById("formSubmit");
 
     cakeIcon.addEventListener("click", () => {
