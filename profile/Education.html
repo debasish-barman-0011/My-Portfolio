@@ -4,185 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills &#128994 |Debasish Barman |</title>
+    <title>Education &#128994 |Debasish Barman |</title>
     <link rel="shortcut icon" href="./assets/webIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/community.css">
-    <link rel="stylesheet" href="./css/icons.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../css/home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
     <style>
-        .itemContainer img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 4px;
+        .container {
+            padding: 10px 5%;
         }
 
-        .itemContainer img:hover {
-            opacity: 0.7;
+        .schools {
+            grid-gap: 20px;
+            margin-top: 10px;
         }
 
-        .communityContainer .itemContainer {
-            border: none !important;
-            padding: 0;
+        @media screen and (max-width: 375px) {
+            .subtitle {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
     <nav>
-        <img src="./assets/Debasish Barman.png" alt="logo">
+        <img src="../assets/Debasish Barman.png" alt="logo">
         <ul id="sideMenu">
-
             <li>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="index.html#portfolio">Projects</a>
+                <a href="../index.html#portfolio">Projects</a>
             </li>
             <li>
-                <a href="Achievements.html">Achievements</a>
-            </li>
-            <li>
-                <a href="Resources.html">Resources</a>
+                <a href="../profile/Achievements.html">Achievements</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
             </li>
-
             <li>
-                <a href="Resume-Download.html" class="Download">Resume</a>
+                <a href="../public/community.html">Community</a>
+            </li>
+            <li>
+                <a href="../profile/Resume-Download.html" class="Download">Resume</a>
             </li>
             <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
     </nav>
-    <!-- End of NavBar -->
-    <!-- Scrool Indicator -->
     <div id="scrollIndicator"></div>
-
-
-
-    <!-- Community Section -->
-    <div class="communityContainer">
-        <!-- Skills Details -->
-        <div class="itemContainer profile-box content">
-            <img src="./images/HTML.jpg" alt="HTML">
-            <div class="skillName">
-                <h3 style="text-align: center;">Hyper Text Markup Language</h3>
+    <!-- End of NaviGationBar-->
+    <!-- My Education Section -->
+    <div id="portfolio education">
+        <div class="container">
+            <h1 class="subtitle" style="text-align: center;">Education</h1>
+            <div class="workList schools">
+                <div class="work">
+                    <img src="../assets/brainwareUniversity.jpg" alt="BCA">
+                    <div class="layer">
+                        <h3>BCA (2022-25)</h3>
+                        <p>
+                            BCA student at BRAINWARE UNIVERSITY. Ever since I was a child, I've always been very focused
+                            on my studies. My dedication has paid off, and I was awarded the prestigious University
+                            Vidyalankar Scholarship, which is helping me pursue my degree.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/dakshinMoynaHighSchool.jpg" alt="HSC">
+                    <div class="layer">
+                        <h3>Higher Secondary</h3>
+                        <p>
+                            from Dakshin Moyna High School (H.S.) in 2022, achieved an impressive marks 96% in my board
+                            exams. This was significantly influenced by the unwavering support and guidance of my
+                            teachers and hostel warden, whose contributions were instrumental in my academic success.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/asnanHighSchool.jpg" alt="SSC">
+                    <div class="layer">
+                        <h3>Secondary (10th)</h3>
+                        <p>
+                            I completed my SSC from ASNAN High School with an impressive 82% in the year 2020. My
+                            success in the board exams is largely attributed to the unwavering support and guidance from
+                            my teachers.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/mabarakpurAMSCHighSchool.jpg" alt="Primary">
+                    <div class="layer">
+                        <h3>Elementory School</h3>
+                        <p>
+                            Mabarakpur A.M.S.C. High School taught me the importance of quality education. This school
+                            laid a strong foundation for my academic journey, thanks to the exceptional teachers who
+                            inspired me to value education as a vital tool for personal and societal growth.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/CSS.png" alt="CSS">
-            <div class="skillName">
-                <h3 style="text-align: center;">Cascading Style Sheets</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/JAVASCRIPT.jpg" alt="JAVASCRIPT">
-            <div class="skillName">
-                <h3 style="text-align: center;">JavaScript</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/Node.jpg" alt="Node">
-            <div class="skillName">
-                <h3 style="text-align: center;">Node Js</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/Express.jpg" alt="Express">
-            <div class="skillName">
-                <h3 style="text-align: center;">Express Js</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/MongoDB.jpg" alt="MongoDB">
-            <div class="skillName">
-                <h3 style="text-align: center;">MongoDB</h3>
-            </div>
-        </div>
-        <!-- <div class="itemContainer profile-box content">
-            <img src="./images/JAVA.jpg" alt="JAVA">
-            <div class="skillName">
-                <h3 style="text-align: center;">JAVA</h3>
-            </div>
-        </div> -->
-        <div class="itemContainer profile-box content">
-            <img src="./images/MySQL.jpg" alt="MySQL">
-            <div class="skillName">
-                <h3 style="text-align: center;">MySQL</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="./images/PHP.jpg" alt="PHP">
-            <div class="skillName">
-                <h3 style="text-align: center;">PHP</h3>
-            </div>
-        </div>
-        <!-- Additional items here -->
-    </div>
-    <!-- Popup menu with member detials -->
-    <div class="popup">
-        <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <h3 style="font-size: 1.7rem;" class="popup-name"></h3>
-            <span style="font-size: 1.3rem;" class="popup-degree"></span>
-            <p style="font-size: 1.1rem;" class="popup-bio"></p>
-            <p style="font-size: 1rem;" class="popup-description"></p>
         </div>
     </div>
-
+    <!-- End of School Items -->
     <!-- Icon Section -->
     <section class="iconsContainer">
         <div class="icons">
-            <img class="invert" src="./icons/education.png" alt>
+            <img class="invert" src="../icons/education.png" alt>
             <div class="info">
                 <h3 class="gradient">Education</h3>
-                <span>
-                    <a href="Education.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/certificate.png" alt>
-            <div class="info">
-                <h3 class="gradient">Certifications</h3>
-                <span>
-                    <a href="Certifications.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/achievement.png" alt>
-            <div class="info">
-                <h3 class="gradient">My Achievements</h3>
-                <span>
-                    <a href="Achievements.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/skills.png" alt>
-            <div class="info">
-                <h3 class="gradient">Top Skills</h3>
                 <span>
                     <a href="">
                         <i class="fa-solid fa-angles-right"></i>
@@ -192,11 +132,11 @@
             </div>
         </div>
         <div class="icons">
-            <img class="invert" src="./icons/resources.png" alt>
+            <img class="invert" src="../icons/certificate.png" alt>
             <div class="info">
-                <h3 class="gradient">Resources</h3>
+                <h3 class="gradient">Certifications</h3>
                 <span>
-                    <a href="Resources.html">
+                    <a href="../profile/Certifications.html">
                         <i class="fa-solid fa-angles-right"></i>
                         Know more+
                     </a>
@@ -204,11 +144,47 @@
             </div>
         </div>
         <div class="icons">
-            <img class="invert" src="./icons/community.png" alt>
+            <img class="invert" src="../icons/achievement.png" alt>
+            <div class="info">
+                <h3 class="gradient">My Achievements</h3>
+                <span>
+                    <a href="../profile/Achievements.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="../icons/skills.png" alt>
+            <div class="info">
+                <h3 class="gradient">Top Skills</h3>
+                <span>
+                    <a href="../profile/Top Skills.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="../icons/resources.png" alt>
+            <div class="info">
+                <h3 class="gradient">Resources</h3>
+                <span>
+                    <a href="../public/Resources.html">
+                        <i class="fa-solid fa-angles-right"></i>
+                        Know more+
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <img class="invert" src="../icons/community.png" alt>
             <div class="info">
                 <h3 class="gradient">Our Community</h3>
                 <span>
-                    <a href="community.html">
+                    <a href="../public/community.html">
                         <i class="fa-solid fa-angles-right"></i>
                         Know more+
                     </a>
@@ -258,7 +234,7 @@
                             <i class="fa-brands fa-square-x-twitter"></i>
                         </a>
                     </div>
-                    <a href="Resume-Download.html" class="btn btn2" id="openModalBtn" onclick="openModal()">
+                    <a href="../profile/Resume-Download.html" class="btn btn2" id="openModalBtn" onclick="openModal()">
                         Download Resume
                     </a>
                 </div>
@@ -275,38 +251,35 @@
             </div>
         </div>
     </div>
-
-    <!-- End of Contact -->
     <!-- Footer Sction -->
     <section class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>Quick Navigation</h3>
-                <a href="index.html">Back to Home</a>
-                <a href="index.html#about">About Me</a>
+                <a href="../index.html">Back to Home</a>
+                <a href="../index.html#about">About Me</a>
                 <a href="#contact">Contact Me</a>
-                <a href="index.html#portfolio">My Projects</a>
-                <a href="Achievements.html">Achievements</a>
-                <a href="Resume-Download.html">Download Resume</a>
+                <a href="../index.html#portfolio">My Projects</a>
+                <a href="../profile/Achievements.html">Achievements</a>
+                <a href="../profile/Resume-Download.html">Download Resume</a>
             </div>
             <div class="box">
                 <h3>Useful Websites</h3>
-
                 <a href="https://snap-safari.netlify.app/" target="_blank">
                     SnapSafari
                 </a>
                 <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank">
                     ADOPT MEEE
                 </a>
-                <a href="http://fiberflow.great-site.net/" target="_blank">FiberFlow</a>
-                <a href="community.html" target="_blank">
+                <a href="https://nexvenue.netlify.app" target="_blank">NexVenue</a>
+                <a href="../profile/Certifications.html">
+                    CourseWorks
+                </a>
+                <a href="../public/community.html">
                     Our Community
                 </a>
-                <a href="Resources.html">
-                    Online Resources
-                </a>
-                <a href="https://downloadme.onrender.com/" target="_blank">
-                    Youtube Downloader
+                <a href="https://bwuid.netlify.app" target="_blank">
+                    Campus-Quest
                 </a>
             </div>
             <div class="box">
@@ -341,20 +314,18 @@
                 Barman
             </a>
         </p>
-        <p class="update">Last update: 25th July 2024</p>
+        <p class="update">Last update: 25th Feb 2025</p>
     </div>
-
-    <!-- Java Scripts -->
-    <script src="./js/community.js"></script>
+    <!-- JS Scripts -->
     <!-- TabLinks Open Close & navBar Script -->
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <!-- GSheed Data Collection Script -->
-    <script src="./js/formData.js"></script>
+    <script src="../js/formData.js"></script>
     <!-- greetBy Time Script -->
-    <script src="./js/timeGreet.js"></script>
+    <script src="../js/timeGreet.js"></script>
     <!-- ScroolBar Script -->
-    <script src="./js/scroll.js"></script>
-
+    <script src="../js/scroll.js"></script>
+    <!-- End of JS Scripts -->
 </body>
 
 </html>

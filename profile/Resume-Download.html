@@ -139,12 +139,12 @@
 </head>
 
 <body>
-  <button id="locker" onclick="location.href='my-documents.html'">My Locker</button>
-  <button id="home-button" onclick="location.href='index.html'">
+  <button id="locker" onclick="location.href='../auth/my-documents.html'">My Locker</button>
+  <button id="home-button" onclick="location.href='../index.html'">
     Return to Home
   </button>
   <div class="preloader">
-    <img src="./icons/Download.png" alt="Click to Download Resume" class="cake-icon" />
+    <img src="../icons/Download.png" alt="Click to Download Resume" class="cake-icon" />
   </div>
   <div class="form-container">
     <form id="resumeForm">
@@ -259,7 +259,7 @@
     }
 
     function downloadResume() {
-      const downloadUrl = "/assets/Debasish Barman.pdf";
+      const downloadUrl = "../assets/Debasish Barman.pdf";
       const link = document.createElement("a");
       link.href = downloadUrl;
       link.download = "Debasish Barman.pdf";
