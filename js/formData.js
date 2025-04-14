@@ -43,7 +43,7 @@ function submitForm() {
 
 function showConfirmationAlert() {
   Swal.fire({
-    title: "Post Your Message 🤔",
+    title: "Agree to Submit?",
     text: "",
     icon: "question",
     showCancelButton: true,
@@ -59,7 +59,7 @@ function showConfirmationAlert() {
 
 function showSuccessAlert() {
   Swal.fire({
-    title: "DONE 😊",
+    title: "Submitted",
     text: "Thank You.",
     icon: "success",
     timer: 2000,
@@ -69,7 +69,7 @@ function showSuccessAlert() {
 
 function showErrorAlert(errorMessage) {
   Swal.fire({
-    title: "Failed 😣",
+    title: "😣 ..Failed.. 😣",
     text: errorMessage,
     icon: "error",
     confirmButtonText: "OK",
