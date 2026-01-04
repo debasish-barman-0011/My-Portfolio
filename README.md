@@ -8,7 +8,7 @@ Visit my portfolio at [https://debasish-barman-0011.github.io/My-Portfolio/](htt
 
 # OR
 
-Visit my portfolio at [https://dbport.netlify.app/](https://dbport.netlify.app/) hosted on Netlify uing GitHub CICD
+Visit my portfolio at [https://debasishbarman.netlify.app/](https://debasishbarman.netlify.app/) hosted on Netlify uing GitHub CICD
 
 ## 🌟 Features
 
@@ -70,7 +70,7 @@ If you have any questions or would like to connect, please use the [contact form
 
 # OR
 
-You reach out to me through my [Linkedin](https://www.linkedin.com/in/debasish-barman-923806280/)
+You reach out to me through my [Linkedin](https://www.linkedin.com/in/exp-debasish/)
 profile.
 
 ---
