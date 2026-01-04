@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Registration - Debasish Barman</title>
-  <link rel="shortcut icon" href="../assets/webIcon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/Userr.jpg" type="image/x-icon">
+  <title>Access Registration - Debasish Barman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
   <style>
@@ -110,12 +110,12 @@
     // Display SweetAlert to inform users registration is restricted //
     Swal.fire({
       icon: 'error',
-      title: 'Registration Restricted',
-      text: 'Reach out to the Admin for further Communication',
+      title: 'Unauthorized Access',
+      text: 'This feature is Blocked by Debasish Barman.',
       showConfirmButton: false,
-      timer: 5000
+      timer: 2000
     }).then(() => {
-      window.location.href = '../index.html#contact';
+      window.location.href = '../profile/education.html#contact';
     });
 
   </script>
