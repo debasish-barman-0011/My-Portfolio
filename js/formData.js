@@ -43,12 +43,12 @@ function submitForm() {
 
 function showConfirmationAlert() {
   Swal.fire({
-    title: "Agree to Submit?",
-    text: "",
-    icon: "question",
+    title: "Good to go!",
+    text: "Yes",
+    icon: "info",
     showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
+    confirmButtonColor: "#21da65ff",
+    cancelButtonColor: "rgba(104, 62, 62, 1)",
     confirmButtonText: "Send",
   }).then((result) => {
     if (result.isConfirmed) {
@@ -69,7 +69,7 @@ function showSuccessAlert() {
 
 function showErrorAlert(errorMessage) {
   Swal.fire({
-    title: "😣 ..Failed.. 😣",
+    title: "Failed",
     text: errorMessage,
     icon: "error",
     confirmButtonText: "OK",
