@@ -1,379 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/Userr.jpg" type="image/x-icon">
+     <meta name="description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services since Dec 2025. Previously, I served as an ICT District Coordinator at Schoolnet India Limited">
+    <meta name="keywords" content="Debasish Barman, Exp-Debasish, debasish barman , dbport, dbport.netlify.app, exp-debassish">
+    <!-- Open Graph Meta Tags (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://debasishbarman.netlify.app">
+    <meta property="og:title" content="Debasish Barman | EXP-Debasish">
+    <meta property="og:description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services">
+    <meta property="og:image" content="https://debasishbarman.netlify.app/assets/Userr.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Debasish Barman Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@exp_debasish">
+    <meta name="twitter:creator" content="@exp_debasish">
+    <meta name="twitter:title" content="Debasish Barman | working at TCS | Exp-Debasish">
+    <meta name="twitter:description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services.">
+    <meta name="twitter:image" content="https://debasishbarman.netlify.app/assets/Userr.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#ff004f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://debasishbarman.netlify.app">
+    <link rel="shortcut icon" href="https://debasishbarman.netlify.app/assets/Userr.jpg" type="image/x-icon">
     <title>My Skills | Debasish Barman | Exp-Debasish</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/community.css">
-    <link rel="stylesheet" href="../css/icons.css">
-    <link rel="stylesheet" href="../css/media.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/scroll.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
-    <style>
-        .itemContainer img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 4px;
-        }
-
-        .itemContainer img:hover {
-            opacity: 0.7;
-        }
-
-        .communityContainer .itemContainer {
-            border: none !important;
-            padding: 0;
-        }
-    </style>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/loader.css">
+   
 </head>
-
 <body>
-    <nav>
-        <img src="../assets/Debasish Barman.png" alt="logo">
-        <ul id="sideMenu">
-
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../index.html#portfolio">Projects</a>
-            </li>
-            <li>
-                <a href="../profile/Achievements.html">Achievements</a>
-            </li>
-            <li>
-                <a href="../public/Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-            <li>
-                <a href="../profile/Resume-Download.html" class="Download">Resume</a>
-            </li>
-            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-    </nav>
-    <!-- End of NavBar -->
-    <!-- Scrool Indicator -->
-    <div id="scrollIndicator"></div>
-
-
-
-    <!-- Community Section -->
-    <div class="communityContainer">
-        <!-- Skills Details -->
-         <div class="itemContainer profile-box content">
-            <img src="../images/Linux.jpg" alt="Linux">
-            <div class="skillName">
-                <h3 style="text-align: center;">Linux</h3>
-            </div>
-        </div> 
-        <div class="itemContainer profile-box content">
-            <img src="../images/WinServer.jpg" alt="Windows Server">
-            <div class="skillName">
-                <h3 style="text-align: center;">Windows Server</h3>
-            </div>
-        </div> 
-        <div class="itemContainer profile-box content">
-            <img src="../images/HWTroublesooting.jpg" alt="Hardware Troubleshooting">
-            <div class="skillName">
-                <h3 style="text-align: center;">Hardware Troubleshooting</h3>
-            </div>
-        </div> 
-
-        <div class="itemContainer profile-box content">
-            <img src="../images/HTML.jpg" alt="HTML">
-            <div class="skillName">
-                <h3 style="text-align: center;">Hyper Text Markup Language</h3>
-            </div>
+    <!-- Animated Loader -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
         </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/CSS.png" alt="CSS">
-            <div class="skillName">
-                <h3 style="text-align: center;">Cascading Style Sheets</h3>
-            </div>
+        <div class="loader-text">Loading...</div>
+        <div class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/JAVASCRIPT.jpg" alt="JAVASCRIPT">
-            <div class="skillName">
-                <h3 style="text-align: center;">JavaScript</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/Node.jpg" alt="Node">
-            <div class="skillName">
-                <h3 style="text-align: center;">Node Js</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/Express.jpg" alt="Express">
-            <div class="skillName">
-                <h3 style="text-align: center;">Express Js</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/MongoDB.jpg" alt="MongoDB">
-            <div class="skillName">
-                <h3 style="text-align: center;">MongoDB</h3>
-            </div>
-        </div>
-        <!-- <div class="itemContainer profile-box content">
-            <img src="./images/JAVA.jpg" alt="JAVA">
-            <div class="skillName">
-                <h3 style="text-align: center;">JAVA</h3>
-            </div>
-        </div> -->
-        <div class="itemContainer profile-box content">
-            <img src="../images/MySQL.jpg" alt="MySQL">
-            <div class="skillName">
-                <h3 style="text-align: center;">MySQL</h3>
-            </div>
-        </div>
-        <div class="itemContainer profile-box content">
-            <img src="../images/PHP.jpg" alt="PHP">
-            <div class="skillName">
-                <h3 style="text-align: center;">PHP</h3>
-            </div>
-        </div>
-        <!-- Additional items here -->
-    </div>
-    <!-- Popup menu with member detials -->
-    <div class="popup">
-        <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <h3 style="font-size: 1.7rem;" class="popup-name"></h3>
-            <span style="font-size: 1.3rem;" class="popup-degree"></span>
-            <p style="font-size: 1.1rem;" class="popup-bio"></p>
-            <p style="font-size: 1rem;" class="popup-description"></p>
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
         </div>
     </div>
 
-    <!-- Icon Section -->
-    <section class="iconsContainer">
-        <div class="icons">
-            <img class="invert" src="../icons/education.png" alt>
-            <div class="info">
-                <h3 class="gradient">Education</h3>
-                <span>
-                    <a href="../profile/Education.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="../icons/certificate.png" alt>
-            <div class="info">
-                <h3 class="gradient">Certifications</h3>
-                <span>
-                    <a href="../profile/Certifications.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="../icons/achievement.png" alt>
-            <div class="info">
-                <h3 class="gradient">My Achievements</h3>
-                <span>
-                    <a href="../profile/Achievements.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="../icons/skills.png" alt>
-            <div class="info">
-                <h3 class="gradient">Top Skills</h3>
-                <span>
-                    <a href="">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="../icons/resources.png" alt>
-            <div class="info">
-                <h3 class="gradient">Resources</h3>
-                <span>
-                    <a href="../public/Resources.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="../icons/community.png" alt>
-            <div class="info">
-                <h3 class="gradient">Our Community</h3>
-                <span>
-                    <a href="../public/community.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-    </section>
-    <!-- End of the Icon section -->
-    <!-- Contact Section with Form -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contactLeft">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p>
-                        <a href="mailto:mail4barman@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                            Send an Email
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://wa.me/7319373098">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            Chat on Whatsapp
-                        </a>
-                    </p>
-                    <p>
-                        <a href="tel:+91 7319373098">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            Call Now
-                        </a>
-                    </p>
-                    <div class="socialIcons">
-                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/exp_debasish/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/exp-debasish/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/debasish-barman-0011" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/exp_debasish" target="_blank">
-                            <i class="fa-brands fa-square-x-twitter"></i>
-                        </a>
-                    </div>
-                    <a href="../profile/Resume-Download.html" class="btn btn2" id="openModalBtn" onclick="openModal()">
-                        Download Resume
-                    </a>
-                </div>
-                <div class="contactRight">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="email" name="Email" placeholder="Enter Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
-                        <button onclick="showAlert()" id="btnSubmit" type="submit" class="btn btn2">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <!-- Main Content -->
+    <div class="container" id="mainContent">
+        <h1>Page under development</h1>
+        <p class="countdown-text">Redirecting in <span id="countdown">5</span> seconds</p>
+      
     </div>
 
-    <!-- End of Contact -->
-    <!-- Footer Sction -->
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>Quick Navigation</h3>
-                <a href="../index.html">Back to Home</a>
-                <a href="../index.html#about">About Me</a>
-                <a href="#contact">Contact Me</a>
-                <a href="../index.html#portfolio">My Projects</a>
-                <a href="../profile/Achievements.html">Achievements</a>
-                <a href="../profile/Resume-Download.html">Download Resume</a>
-            </div>
-            <div class="box">
-                <h3>Useful Websites</h3>
-
-                <a href="https://snap-safari.netlify.app/" target="_blank">
-                    SnapSafari
-                </a>
-                <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank">
-                    ADOPT MEEE
-                </a>
-                <a href="https://nexvenue.onrender.com/" target="_blank">NexVenue</a>
-                <a href="../public/community.html" target="_blank">
-                    Our Community
-                </a>
-                <a href="../public/Resources.html">
-                    Online Resources
-                </a>
-                <a href="https://bwuid.netlify.app" target="_blank">
-                    Campus-Quest
-                </a>
-            </div>
-            <div class="box">
-                <h3>Follow Me</h3>
-                <a target="_blank" href="https://www.linkedin.com/in/exp-debasish">
-                    Linkedin
-                </a>
-                <a target="_blank" href="https://www.facebook.com/mr.debasish.barman">
-                    Facebook
-                </a>
-                <a target="_blank" href="https://www.instagram.com/exp_debasish/">
-                    Instagram
-                </a>
-                <a href="under-process.html">Pinterest</a>
-                <a href="under-process.html">Telegram</a>
-                <a href="under-process.html">Youtube</a>
-            </div>
-            <div class="box">
-                <h3>Permanent Address</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938844.153108378!2d84.85918215779066!3d21.607966940105058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02c0fd388251f3%3A0x4d359e98db5ee1a8!2z4Kao4Ka-4Kaw4Ka_4KaV4KeH4Kay4Kam4Ka5LCDgppPgpq_gprzgp4fgprjgp43gpp8g4Kas4KeH4KaZ4KeN4KaX4KayIDcyMTY0Mg!5e0!3m2!1sbn!2sin!4v1716647588936!5m2!1sbn!2sin"
-                    width="100%" height="220" style="border: 0" allowfullscreen loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- SubFooter -->
-    <div class="copyright">
-        <p class="gradient2">
-            Design & Developed by
-            <a class="gradient3" target="_blank" href="https://www.linkedin.com/in/exp-debasish">
-                Debasish
-                Barman
-            </a>
-        </p>
-        <p class="update">Last update: 25th Nov 2025</p>
-    </div>
-
-    <!-- Java Scripts -->
-    <script src="../js/community.js"></script>
-    <!-- TabLinks Open Close & navBar Script -->
-    <script src="../js/script.js"></script>
-    <!-- GSheed Data Collection Script -->
-    <script src="../js/formData.js"></script>
-    <!-- greetBy Time Script -->
-    <script src="../js/timeGreet.js"></script>
-    <!-- ScroolBar Script -->
-    <script src="../js/scroll.js"></script>
-
+    <script>
+        // Show loader animation //
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            const mainContent = document.getElementById('mainContent');
+            let count = 5;
+            const countdownElement = document.getElementById('countdown');
+            let countdownInterval;
+            
+            // Start the countdown immediately but keep loader visible for 2 seconds //
+            countdownInterval = setInterval(() => {
+                count--;
+                countdownElement.textContent = count;
+                
+                if (count <= 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = '/index.html';
+                }
+            }, 1000);
+            
+            // Hide loader after given time and show main content //
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                
+                // Show main content with fade-in effect //
+                setTimeout(() => {
+                    mainContent.classList.add('visible');
+                }, 200);
+                
+                // After loader is hidden, continue countdown //
+            }, 2000);
+            
+            // Allow manual navigation before redirect //
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetUrl = this.getAttribute('href');
+                    
+                    // Show a quick exit animation //
+                    document.body.style.opacity = '0.7';
+                    document.body.style.transition = 'opacity 0.3s';
+                    
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 200);
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

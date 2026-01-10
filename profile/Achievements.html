@@ -1,491 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/Userr.jpg" type="image/x-icon">
-    <title>My Award & Achievements | Debasish Barman | Exp-Debasish</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/community.css">
-    <link rel="stylesheet" href="../css/icons.css">
-    <link rel="stylesheet" href="../css/media.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/scroll.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+     <meta name="description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services since Dec 2025. Previously, I served as an ICT District Coordinator at Schoolnet India Limited">
+    <meta name="keywords" content="Debasish Barman, Exp-Debasish, debasish barman , dbport, dbport.netlify.app, exp-debassish">
+    <!-- Open Graph Meta Tags (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://debasishbarman.netlify.app">
+    <meta property="og:title" content="Debasish Barman | EXP-Debasish">
+    <meta property="og:description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services">
+    <meta property="og:image" content="https://debasishbarman.netlify.app/assets/Userr.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Debasish Barman Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@exp_debasish">
+    <meta name="twitter:creator" content="@exp_debasish">
+    <meta name="twitter:title" content="Debasish Barman | working at TCS | Exp-Debasish">
+    <meta name="twitter:description" content="Portfolio - Debasish Barman. Graduated from Brainware University, working as an Associate at Tata Consultancy Services.">
+    <meta name="twitter:image" content="https://debasishbarman.netlify.app/assets/Userr.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#ff004f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://debasishbarman.netlify.app">
+    <link rel="shortcut icon" href="https://debasishbarman.netlify.app/assets/Userr.jpg" type="image/x-icon">
+    <title>My Achievements | Debasish Barman | Exp-Debasish</title>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/loader.css">
+   
 </head>
-
 <body>
-    <nav>
-        <img src="../assets/Debasish Barman.png" alt="logo">
-        <ul id="sideMenu">
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../index.html#portfolio">Projects</a>
-            </li>
-            <li>
-                <a href="../public/Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="../profile/Education.html">Education</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
-                <a href="../profile/Resume-Download.html" class="Download">Resume</a>
-            </li>
-            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-    </nav>
-    <!-- End of NavBar -->
-    <!-- Scrool Indicator -->
-    <div id="scrollIndicator"></div>
-    <h1 class="subtitle" style="text-align: center;">Award & Achievements</h1>
-    <!-- Community Section -->
-    <div class="communityContainer">
-        <!-- Award 0 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 Ministry of Power| NHPC"
-            data-description="I led a team of six members, including myself, in the Smart India Hackathon (SIH2023). Throughout the competition, I guided my team in researching, critically thinking, and designing a prototype solution for the given problem. Although we did not reach the Grand Finale, participating in SIH2023 and passing few steps with proper solution to the given problem statement was a significant achievement for us, showcasing our collective talents and efforts.">
-            <div class="content">
-                <div class="description">
-                    <h3>SIH2023 Team Lead</h3>
-                    <span>Brainware University &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit active" id="downloadButton3">Certificate</button>
-                <button class="know-more">Know More</button>
-            </div>
+    <!-- Animated Loader -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
         </div>
-        <!-- Award 1 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 |HSC Pass WBCHSE| CBSE| ICSC|"
-            data-description="Trust proposes to grant Scholarships to meritorious students, male or female, from West Bengal, who have passed class XII examination and have secured 85% marks or more from WBCHSE or 90% or more from ISC/CBSE and whose family income is less than Rs. 3,00,000/- per year and as such are in need of financial help to pursue further studies. For students who are extra meritorius, maximum family income criteria may be relaxed in the specific cases at the discretion of the Trustees. Further studies may be in any stream including Science, Commerce, Arts, Engineering, Medicine, Architecture, Law or professional courses such as Chartered Accountancy, Company Secretaryship and Cost Accountancy if being pursued along with Under Graduation degree Course, in any recognized University/Institution in India.
-        Scholarship amount, to be granted to a limited number of selected students, will be to cover Tuition Fees and Hostel Fees, subject to a ceiling of Rs. 50,000/- per student per year. The Scholarship will be granted students for one year at a time and to be continued upon satisfactory performance by the Student in the preceding year.">
-            <div class="content">
-                <div class="description">
-                    <h3>G.P. Birla Scholarship</h3>
-                    <span>GP Birla Educational Foundation &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit">
-                    <a href="https://gpbirlaedufoundation.com/user-application-form.php" target="_blank">Apply Now</a>
-                </button>
-                <button class="know-more"> Elligibility</button>
-            </div>
+        <div class="loader-text">Loading...</div>
+        <div class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <!-- Award 2 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 |HSC Pass WBCHSE| CBSE| ICSC|" data-description="- Students who are currently enrolled in undergraduate degree programmes such as B.Com., B.Sc., BA, etc. or diploma/polytechnic courses at recognized institutions in India can apply.
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContent">
+        <h1>Page under development</h1>
+        <p class="countdown-text">Redirecting in <span id="countdown">5</span> seconds</p>
+      
+    </div>
+
+    <script>
+        // Show loader animation //
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            const mainContent = document.getElementById('mainContent');
+            let count = 5;
+            const countdownElement = document.getElementById('countdown');
+            let countdownInterval;
             
-        - Applicants must have scored at least 60% marks in the preceding class.
-        
-        - The annual family income of the applicants from all sources must be less than or equal to INR 2.5 lakh.
-        
-        - Children of employees of Tata Capital & Buddy4Study are not eligible. 
-        
-        Documents - 
-         - Photo identity proof (Aadhaar Card)
-        
-         - Passport-size photograph of the applicant
-        
-         - Income proof (Form 16A/income certificate issued by government authority/salary slips, etc.)
-        
-         - Proof of admission (school/college ID card/bonafide certificate, etc.)
-        
-         - Current academic year fee receipt
-        
-         - Bank account details of the scholarship applicant (cancelled cheque/passbook copy)
-        
-         - Marksheets or grade cards of the preceding class.">
-            <div class="content">
-                <div class="description">
-                    <h3>The Tata Capital Pankh Scholarship</h3>
-                    <span>Buddy4Study India Foundation &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit active" id="downloadButton1">Certificate</button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Award 3 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 |HSC Pass WBCHSE| CBSE| ICSC|" data-description="All candidates who have passed Class XII exam (or its equivalent – Regular/Vocational) / Diploma with at least 60% marks (or equivalent grade) in every Academic Year  and whose parents/guardian have an annual income (from all sources) not exceeding Rs.2,50,000 per annum* (please refer clause 6 (i) – relaxation) are eligible to apply for scholarship. The grant is provided to students who are interested (and willing) to pursue higher education in the field of Medicine, Engineering, Graduation in any discipline, Integrated Courses, Diploma Course in any field or other equivalent courses, Vocational Courses through Government recognized Colleges /Institutes or courses in Industrial Training Institutes (ITIs).
-
-        - All candidates who have passed Class X exam (or its equivalent) with at least 60% marks (or equivalent grade) in each Academic Year and whose parents/guardian have an annual income (from all sources) not exceeding Rs.2,50,000 per annum. The grant is provided to students who are pursuing higher education in the field of Vocational / Diploma Courses through Government recognized colleges/ institutions or courses in Industrial Training Institutes (ITI).
-        ">
-            <div class="content">
-                <div class="description">
-                    <h3>LIC Golden Jublee Scholarship</h3>
-                    <span>Life Insurace Corporation of India &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit active" id="downloadButton0">Certificate</button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Award 4 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 |SSC |HSC |Graduation"
-            data-description="Mi Scholarship programme is an initiative of Xiaomi India to support higher education of meritorious students who belong to underprivileged sections of the society. Under this scholarship, the students studying in Class 11/12 and undergraduate level will receive financial assistance to continue their studies. 
-
-        Xiaomi India is a renowned multinational company, known for its smartphones, laptops, home appliances and other consumer products. The company with a vision to make high-quality products and cutting-edge technology accessible to everyone, has introduced this scholarship as part of its CSR (Corporate Social Responsibility) programme to help students towards their educational dreams.">
-            <div class="content">
-                <div class="description">
-                    <h3>MI (Xiaomi) Scholarship</h3>
-                    <span>CSR of Xiaomi India &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit active" id="downloadButton2">Certificate</button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Award 5 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 SSC |HSC |UG |PG"
-            data-description="Documents to be uploaded for Fresh and Kanyashree Application:
-        i. Mark sheet of Madhyamik Examination or its equivalent (Both sides)
-        ii. Mark sheet of last Board/Council/University/College examination (Both sides)
-        ii. Admission receipt
-        iii. Income certificate of family (Not Applicable for Kanyashree)
-        iv. Domicile certificate as Aadhaar ID/Voter ID/Ration card/Certificate Issued by concerned authority
-        v. Scanned copy of Bank Passbook (1st Page, containing A/C No. and IFSC)
-        vi. Declaration by Head of the Institution regarding the cause of Year Gap. (This option will appear only if applicant selects Year of Qualifying Exam as 2022 or earlier while registration)">
-            <div class="content">
-                <div class="description">
-                    <h3>Swami Vivekananda Merit Cum Means Scholarship</h3>
-                    <span>C.M West Bengal &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit">
-                    <a href="https://svmcm.wbhed.gov.in/page/application_procedure.php" target="_blank">Apply Now</a>
-                </button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Award 7 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 SSC| HSC| UG| PG|"
-            data-description="Central Government(Government of India) Provides multiple schoalrships to the students those are from very poor financial background. From school level to PHD students can avail these schemes, please visit NSP Portal to further details.">
-            <div class="content">
-                <div class="description">
-                    <h3>National Scholarship (NSP)</h3>
-                    <span>Prime Minister of India &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit">
-                    <a href="https://scholarships.gov.in/fresh/schemeEligibiltyPage" target="_blank">Apply Now</a>
-                </button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Award 8 Details -->
-        <div class="itemContainer profile-box" data-bio="&#128994 |HSC Pass with 90% +|"
-            data-description="Brainware University provides the Vidyalankar sholarship to the students those have secured 90% and above in Higher Secondary along with 60% and above in SSC or 10th board exam. Those have scored very well in both 10th and 12 they get total Tution Fees off that around 85% of a students total Course fees. So if you're the candidate who schore a handsome persentage in both 10th and 12th can definately choose Brainware University to pursue your dream course with Schoalrship.">
-            <div class="content">
-                <div class="description">
-                    <h3>Brainware Vidyalankar Scholarship</h3>
-                    <span> Brainware University &#128994</span>
-                </div>
-            </div>
-            <div class="actions">
-                <button class="visit">
-                    <a href="https://www.brainwareuniversity.ac.in/studygrants.php" target="_blank">Apply Now</a>
-                </button>
-                <button class="know-more"> Elligibility</button>
-            </div>
-        </div>
-        <!-- Additional items here -->
-    </div>
-    <!-- Popup menu with member detials -->
-    <div class="popup">
-        <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <h3 style="font-size: 1.7rem;" class="popup-name"></h3>
-            <span style="font-size: 1.3rem;" class="popup-degree"></span>
-            <p style="font-size: 1.1rem;" class="popup-bio"></p>
-            <p style="font-size: 1rem;" class="popup-description"></p>
-        </div>
-    </div>
-    <!-- Icon Section -->
-    <section class="iconsContainer">
-        <div class="icons">
-            <img class="invert" src="./icons/education.png" alt>
-            <div class="info">
-                <h3 class="gradient">Education</h3>
-                <span>
-                    <a href="../profile/Education.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/certificate.png" alt>
-            <div class="info">
-                <h3 class="gradient">Certifications</h3>
-                <span>
-                    <a href="../profile/Certifications.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/achievement.png" alt>
-            <div class="info">
-                <h3 class="gradient">My Achievements</h3>
-                <span>
-                    <a href="">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/skills.png" alt>
-            <div class="info">
-                <h3 class="gradient">Top Skills</h3>
-                <span>
-                    <a href="../profile/Top Skills.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/resources.png" alt>
-            <div class="info">
-                <h3 class="gradient">Resources</h3>
-                <span>
-                    <a href="../public/Resources.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-        <div class="icons">
-            <img class="invert" src="./icons/community.png" alt>
-            <div class="info">
-                <h3 class="gradient">Our Community</h3>
-                <span>
-                    <a href="../public/community.html">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Know more+
-                    </a>
-                </span>
-            </div>
-        </div>
-    </section>
-    <!-- End of the Icon section -->
-    <!-- Contact Section with Form -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contactLeft">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p>
-                        <a href="mailto:mail4barman@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                            Send an Email
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://wa.me/9073532270">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            Chat on Whatsapp
-                        </a>
-                    </p>
-                    <p>
-                        <a href="tel:+91 9073532270">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            Call Now
-                        </a>
-                    </p>
-                    <div class="socialIcons">
-                        <a href="https://www.facebook.com/mr.debasish.barman" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/exp_debasish/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/exp-debasish/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/debasish-barman-0011" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/exp_debasish" target="_blank">
-                            <i class="fa-brands fa-square-x-twitter"></i>
-                        </a>
-                    </div>
-                    <a href="../profile/Resume-Download.html" class="btn btn2" id="openModalBtn" onclick="openModal()">
-                        Download Resume
-                    </a>
-                </div>
-                <div class="contactRight">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="email" name="Email" placeholder="Enter Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
-                        <button onclick="showAlert()" id="btnSubmit" type="submit" class="btn btn2">
-                            Send Greetings
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Contact -->
-    <!-- Footer Sction -->
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>Quick Navigation</h3>
-                <a href="../index.html">Back to Home</a>
-                <a href="../index.html#about">About Me</a>
-                <a href="#contact">Contact Me</a>
-                <a href="../index.html#portfolio">My Projects</a>
-                <a href="../profile/Achievements.html">Achievements</a>
-                <a href="../profile/Resume-Download.html">Download Resume</a>
-            </div>
-            <div class="box">
-                <h3>Useful Websites</h3>
-                <a href="https://snap-safari.netlify.app/" target="_blank">
-                    SnapSafari
-                </a>
-                <a href="https://debasish-barman-0011.github.io/Pet-Adoption/" target="_blank">
-                    ADOPT MEEE
-                </a>
-                <a href="https://nexvenue.onrender.com/" target="_blank">
-                    NexVenue
-                </a>
-                <a href="" target="_blank">FiberFlow</a>
-                <a href="https:bwuid.netlify.app/">
-                    Campus-Quest
-                </a>
-                <a href="https://github.com/debasish-barman-0011/Donwloadme" target="_blank">
-                    Youtube Downloader
-                </a>
-            </div>
-            <div class="box">
-                <h3>Follow Me</h3>
-                <a target="_blank" href="https://www.linkedin.com/in/exp-debasish/">
-                    Linkedin
-                </a>
-                <a target="_blank" href="https://www.facebook.com/mr.debasish.barman">
-                    Facebook
-                </a>
-                <a target="_blank" href="https://www.instagram.com/exp_debasish/">
-                    Instagram
-                </a>
-                <a href="under-process.html">Pinterest</a>
-                <a href="under-process.html">Telegram</a>
-                <a href="under-process.html">Youtube</a>
-            </div>
-            <div class="box">
-                <h3>Permanent Address</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938844.153108378!2d84.85918215779066!3d21.607966940105058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02c0fd388251f3%3A0x4d359e98db5ee1a8!2z4Kao4Ka-4Kaw4Ka_4KaV4KeH4Kay4Kam4Ka5LCDgppPgpq_gprzgp4fgprjgp43gpp8g4Kas4KeH4KaZ4KeN4KaX4KayIDcyMTY0Mg!5e0!3m2!1sbn!2sin!4v1716647588936!5m2!1sbn!2sin"
-                    width="100%" height="220" style="border: 0" allowfullscreen loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- SubFooter -->
-    <div class="copyright">
-        <p class="gradient2">
-            Design & Developed by
-            <a class="gradient3" target="_blank" href="https://www.linkedin.com/in/exp-debasish/">
-                Debasish
-                Barman
-            </a>
-        </p>
-        <p class="update">Last update: 28th Feb 2025</p>
-    </div>
-    <!-- Java Scripts -->
-    <!-- Certificate Download Logic -->
-    <!-- SIH Certificate Download -->
-    <script>
-        document.getElementById('downloadButton3').addEventListener('click', function () {
-            const a = document.createElement('a');
-
-            a.href = '../achievements/SIH2023.pdf';
-            a.download = 'Smart India Hackathon 2023.pdf';
-
-            document.body.appendChild(a);
-
-            a.click();
-
-            document.body.removeChild(a);
+            // Start the countdown immediately but keep loader visible for 2 seconds //
+            countdownInterval = setInterval(() => {
+                count--;
+                countdownElement.textContent = count;
+                
+                if (count <= 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = '/index.html';
+                }
+            }, 1000);
+            
+            // Hide loader after given time and show main content //
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                
+                // Show main content with fade-in effect //
+                setTimeout(() => {
+                    mainContent.classList.add('visible');
+                }, 200);
+                
+                // After loader is hidden, continue countdown //
+            }, 2000);
+            
+            // Allow manual navigation before redirect //
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetUrl = this.getAttribute('href');
+                    
+                    // Show a quick exit animation //
+                    document.body.style.opacity = '0.7';
+                    document.body.style.transition = 'opacity 0.3s';
+                    
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 200);
+                });
+            });
         });
     </script>
-    <!-- Certificate Number 0 LIC-->
-    <script>
-        document.getElementById('downloadButton0').addEventListener('click', function () {
-            const a = document.createElement('a');
-
-            a.href = '../achievements/LIC.pdf';
-            a.download = 'Debasish-Barman-LIC.pdf';
-
-            document.body.appendChild(a);
-
-            a.click();
-
-            document.body.removeChild(a);
-        });
-    </script>
-    <!-- First Certificate Download TATA-->
-    <script>
-        document.getElementById('downloadButton1').addEventListener('click', function () {
-            const a = document.createElement('a');
-
-            a.href = '../achievements/TATA.pdf';
-            a.download = 'Debasish-Barman-TATA.pdf';
-
-            document.body.appendChild(a);
-
-            a.click();
-
-            document.body.removeChild(a);
-        });
-    </script>
-    <!-- Second Certificate Download MI-->
-    <script>
-        document.getElementById('downloadButton2').addEventListener('click', function () {
-            const a = document.createElement('a');
-
-            a.href = '../achievements/MI.pdf';
-            a.download = 'Debasish-Barman-Xiaomi.pdf';
-
-            document.body.appendChild(a);
-
-            a.click();
-
-            document.body.removeChild(a);
-        });
-    </script>
-    <!-- Community JS -->
-    <script src="../js/community.js"></script>
-    <!-- TabLinks Open Close & navBar Script -->
-    <script src="../js/script.js"></script>
-    <!-- GSheed Data Collection Script -->
-    <script src="../js/formData.js"></script>
-    <!-- ScroolBar Script -->
-    <script src="../js/scroll.js"></script>
 </body>
-
 </html>

@@ -46,66 +46,7 @@
   </div>
   <!-- End of Admin Register Form -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!--  
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
-    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
-
-    // Firebase Config //
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyBRLwH3rb5bjTkOqiE1CqWWSGH-MoHZGCo",
-      authDomain: "docs-auth-5a02e.firebaseapp.com",
-      projectId: "docs-auth-5a02e",
-      storageBucket: "docs-auth-5a02e.firebasestorage.app",
-      messagingSenderId: "993709848971",
-      appId: "1:993709848971:web:f9ac126e24ae68e863578e"
-    };
-
-
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const db = getDatabase(app);
-
-    document.getElementById('registerForm').addEventListener('submit', async function (evt) {
-      evt.preventDefault();
-
-      const username = document.getElementById('usernameInp').value;
-      const email = document.getElementById('emailInp').value;
-      const password = document.getElementById('passwordInp').value;
-
-      try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        const userId = userCredential.user.uid;
-
-        // Store user details in the firebase realtime database //
-        await set(ref(db, 'admin/' + userId), {
-          username: username,
-          email: email,
-          createdAt: new Date().toISOString()
-        });
-
-        await Swal.fire({
-          icon: 'success',
-          title: 'Registration Successful',
-          text: 'Please login to continue',
-          showConfirmButton: false,
-          timer: 2000
-        });
-
-        window.location.href = 'login.html';
-      } catch (error) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Registration Failed',
-          text: error.message
-        });
-      }
-    });
-  </script>
-
--->
+ 
   <script type="module">
     // Display SweetAlert to inform users registration is restricted //
     Swal.fire({

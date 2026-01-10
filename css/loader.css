@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #f0f0f0;
+    --accent-color: #ff004f;
+    --modal-bg: #1c1c1c;
+    --button-bg: #ff004f;
+    --button-text: #f0f0f0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Loader Styles */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.loader-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.loader-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.loader-circle:nth-child(1) {
+    border-top-color: var(--accent-color);
+    border-right-color: var(--accent-color);
+}
+
+.loader-circle:nth-child(2) {
+    border-bottom-color: var(--accent-color);
+    border-left-color: var(--accent-color);
+    animation-direction: reverse;
+    animation-duration: 1.5s;
+}
+
+.loader-circle:nth-child(3) {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    border-top-color: rgba(255, 0, 79, 0.7);
+    border-right-color: rgba(255, 0, 79, 0.7);
+    animation-duration: 1s;
+}
+
+.loader-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loader-dots {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 20px;
+}
+
+.loader-dots span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loader-dots span:nth-child(1) {
+    left: 8px;
+    animation: loader-dots1 0.6s infinite;
+}
+
+.loader-dots span:nth-child(2) {
+    left: 8px;
+    animation: loader-dots2 0.6s infinite;
+}
+
+.loader-dots span:nth-child(3) {
+    left: 32px;
+    animation: loader-dots2 0.6s infinite;
+}
+
+.loader-dots span:nth-child(4) {
+    left: 56px;
+    animation: loader-dots3 0.6s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-dots1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loader-dots2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+@keyframes loader-dots3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.loader-progress {
+    width: 200px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent-color), #ff6b9d);
+    border-radius: 4px;
+    animation: progress 3s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Main content styles */
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn,
+a {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover,
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 79, 0.4);
+}
+
+.countdown-text {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    background: rgba(255, 0, 79, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#countdown {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.linkedin-badge {
+    margin-bottom: 20px;
+}
