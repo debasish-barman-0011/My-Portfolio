@@ -1,8 +1,8 @@
 // Script for taking userinputs to the google sheets //
 
-// Google Sheet API Key //
+// Google Sheet New API Key from Mail4Barman //
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyRzJrRVLwecLbAB6tNRvNUiWRwKgoLL2S6Wv3tQW8iSt645zYBd3b8NJ3XOc6Ym7Kf5g/exec";
+  "https://script.google.com/macros/s/AKfycbzf584e1lTw82kdjbv9H861VaWYBTi7F5M7SYmtsjw9Nl2bIKutdUSmxCvlzFS_MWthZg/exec";
 
 // Form Reference from HTML file //
 const form = document.forms["submit-to-google-sheet"];
@@ -43,13 +43,12 @@ function submitForm() {
 
 function showConfirmationAlert() {
   Swal.fire({
-    title: "Confirm ",
-    text: "Yes.. Everything is correct.",
+    title: "Confirm Submission",
     icon: "info",
     showCancelButton: true,
     confirmButtonColor: "#21da65ff",
-    cancelButtonColor: "rgba(104, 62, 62, 1)",
-    confirmButtonText: "Submit",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Click to Submit",
   }).then((result) => {
     if (result.isConfirmed) {
       submitForm();
@@ -59,10 +58,10 @@ function showConfirmationAlert() {
 
 function showSuccessAlert() {
   Swal.fire({
-    title: "Submitted",
+    title: "Thank You",
     text: "I'll will get back to you shortly.",
     icon: "success",
-    timer: 1000,
+    timer: 4000,
     showConfirmButton: false,
   });
 }
@@ -72,6 +71,6 @@ function showErrorAlert(errorMessage) {
     title: "Failed",
     text: errorMessage,
     icon: "error",
-    confirmButtonText: "Retry",
+    confirmButtonText: "Check your connection and try again",
   });
 }

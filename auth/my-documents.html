@@ -105,7 +105,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">DigiDrive</a>
+      <a class="navbar-brand" href="../index.html">Portfolio | Home</a>
       <button class="btn btn-outline-danger" id="logoutBtn">Logout</button>
     </div>
   </nav>
@@ -113,82 +113,6 @@
   <div class="container mt-4">
     <h1 class="text-center mb-4">My Personal Documents</h1>
 
-    <!-- Document Cards Section -->
-    <div class="row g-4 mb-5">
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="">
-          <div class="card-body text-center">
-            <h5 class="card-title">Unallocated Docs</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="Tech.pdf">
-          <div class="card-body text-center">
-            <h5 class="card-title">Tech Resume</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="SSC.pdf">
-          <div class="card-body text-center">
-            <h5 class="card-title">10th Marksheet</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="HSC.pdf">
-          <div class="card-body text-center">
-            <h5 class="card-title">12th Marksheet</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="Grade Cards Upto 4th Semester.pdf">
-          <div class="card-body text-center">
-            <h5 class="card-title">Graduation Marksheet</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-sm-6">
-        <div class="card document-card" data-file="">
-          <div class="card-body text-center">
-            <h5 class="card-title">Others - UnAVL</h5>
-            <div class="download-overlay">
-              <button class="btn btn-light download-btn">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Important URLs Section -->
     <h2 class="text-center mb-4">Important Links</h2>
@@ -274,21 +198,7 @@
         console.error('Logout error:', error);
       }
     });
-    // File Download and URLs //
 
-    // Document download functionality //
-    document.querySelectorAll('.download-btn').forEach(btn => {
-      btn.addEventListener('click', function () {
-        const documentCard = this.closest('.document-card');
-        const fileName = documentCard.dataset.file;
-
-        // Replace with your actual file path or download mechanism //
-        const downloadLink = document.createElement('a');
-        downloadLink.href = `../documents/${fileName}`;
-        downloadLink.download = fileName;
-        downloadLink.click();
-      });
-    });
 
     // URL card click functionality //
     document.querySelectorAll('.url-card').forEach(card => {

@@ -29,7 +29,7 @@
     <form id="loginForm">
       <div class="form-floating mb-3">
         <input type="email" class="form-control" id="emailInp" placeholder="name@example.com" required>
-        <label for="emailInp">Email</label>
+        <label for="emailInp">Username</label>
       </div>
       <div class="form-floating mb-3">
         <input type="password" class="form-control" id="passwordInp" placeholder="Password" required>
@@ -45,6 +45,7 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
     import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
+    // Security Note: Firebase config will be replaced by >env file available in this repo. //
     const firebaseConfig = {
       apiKey: "AIzaSyBRLwH3rb5bjTkOqiE1CqWWSGH-MoHZGCo",
       authDomain: "docs-auth-5a02e.firebaseapp.com",
@@ -78,7 +79,7 @@
           icon: 'success',
           title: 'Login Successful!',
           showConfirmButton: false,
-          timer: 1500
+          timer: 2000
         });
 
         window.location.href = './my-documents.html';
