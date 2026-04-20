@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Redirecting to DBPort...</title>
+    <title>Redirecting</title>
     <!-- Immediate redirect via meta refresh (0 seconds delay) -->
-    <meta http-equiv="refresh" content="0; url=https://dbport.netlify.app">
+    <meta http-equiv="refresh" content="0; url=https://debasish.pythonanywhere.com/">
     <!-- Optional: Preconnect to the target domain for faster redirect if browser supports it -->
-    <link rel="preconnect" href="https://dbport.netlify.app">
+    <link rel="preconnect" href="https://debasish.pythonanywhere.com/">
     <!-- Fallback JavaScript redirect (ensures compatibility and catches any meta-refresh blockers) -->
     <script>
         // Immediate JavaScript redirect as primary/backup
@@ -15,7 +15,7 @@
             // Use replace() to avoid adding the current page to history, keeping navigation clean.
             // This also prevents the user from hitting 'back' to this redirect page easily,
             // which is typical for a seamless redirect.
-            window.location.replace("https://dbport.netlify.app");
+            window.location.replace("https://debasish.pythonanywhere.com/");
         })();
     </script>
     <!-- Additional inline style for a subtle loading message (visible only if redirect is delayed,
@@ -119,14 +119,14 @@
 <body>
     <div class="redirect-container">
         <h1>⟳ DBPort</h1>
-        <div class="url-badge">dbport.netlify.app</div>
+        <div class="url-badge">https://debasish.pythonanywhere.com/</div>
         <div class="loader" aria-label="Loading, redirecting in progress"></div>
         <div class="message">
             ⚡ Redirecting you to the destination...
         </div>
         <div class="manual-link">
             If you are not automatically redirected, 
-            <a href="https://dbport.netlify.app" id="manual-redirect-link">click here</a>
+            <a href="https://debasish.pythonanywhere.com/" id="manual-redirect-link">click here</a>
         </div>
     </div>
 
@@ -144,12 +144,12 @@
             // we try again.
             const currentUrl = window.location.href;
             // If the current URL is not already the target (prevent loops)
-            if (!currentUrl.includes('dbport.netlify.app')) {
+            if (!currentUrl.includes('https://debasish.pythonanywhere.com/')) {
                 // Ensure that the window location is not already navigating
                 setTimeout(function() {
                     if (!redirectExecuted && window.location.href === currentUrl) {
                         // Still on same page → try replace again
-                        window.location.replace("https://dbport.netlify.app");
+                        window.location.replace("https://debasish.pythonanywhere.com/");
                         redirectExecuted = true;
                     }
                 }, 30);
@@ -163,7 +163,7 @@
             if (manualLink) {
                 manualLink.addEventListener('click', function(e) {
                     e.preventDefault();
-                    window.location.replace("https://dbport.netlify.app");
+                    window.location.replace("https://debasish.pythonanywhere.com/");
                 });
             }
         })();
